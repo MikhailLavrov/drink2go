@@ -1,0 +1,12 @@
+.body__wrapper {
+  margin: 0 auto;
+  max-width: $mobile;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+
+  position: relative;
+  overflow: hidden;
+}

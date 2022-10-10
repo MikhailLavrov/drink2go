@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: $base-black;
+  font-size: 12px;
+  line-height: 16px;
+
+  background-color: $lightest-grey;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+button {
+  border: none;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: $base-black;
+}
+
+.visually-hidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+
+  border: none;
+  position: absolute;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// //*tablet-width
+
+// @media (min-width: $tablet-width) {
+//   .body {
+//     min-width: 768px;
+//   }
+// }
+
+// //*desktop-width
+
+// @media (min-width: $desktop-width) {
+//   .body {
+//     min-width: 1440px;
+//   }
+// }

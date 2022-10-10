@@ -6,7 +6,6 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
 // Styles
-
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
@@ -19,7 +18,6 @@ export const styles = () => {
 }
 
 // Server
-
 const server = (done) => {
   browser.init({
     server: {
@@ -33,7 +31,6 @@ const server = (done) => {
 }
 
 // Watcher
-
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/*.html').on('change', browser.reload);
