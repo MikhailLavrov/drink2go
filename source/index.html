@@ -42,8 +42,18 @@
         </ul>
       </nav>
       <div class="header__user-menu user-nav">
-        <button class="user-nav__button" type="button">Войти</button>
-        <a class="user-nav__link" href="#">Корзина</a>
+        <button class="user-nav__button" type="button">
+          <svg width="16" height="16">
+            <use xlink:href="../img/sprite.svg#enter"></use>
+          </svg>
+          <span>Войти</span>
+        </button>
+        <a class="user-nav__link" href="#">
+          <svg width="16" height="16">
+            <use xlink:href="../img/sprite.svg#basket"></use>
+          </svg>
+          <span>Корзина</span>
+        </a>
       </div>
     </header>
     <main class="main">
@@ -51,7 +61,17 @@
       <div class="main__container">
         <!-- *SpecialBlock -->
         <section class="special">
-          <img class="special__img" src="" alt="">
+          <div class="special__img-wrapper">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/webp" srcset="./img/flat_white_desktop.webp 1x, ./img/flat_white_desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="./img/flat_white_tablet.webp 1x, ./img/flat_white_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/flat_white_img.webp 1x, ./img/flat_white_img@2x.webp 2x">
+
+              <source media="(min-width: 1440px)" type="image/png" srcset="./img/flat_white_desktop.png 1x, ./img/flat_white_desktop@2x.png 2x">
+              <source media="(min-width: 768px)" type="image/png" srcset="./img/flat_white_tablet.png 1x, ./img/flat_white_tablet@2x.png 2x">
+              <img class="special__img"  width="280" height="280" src="./img/flat_white_img.png" srcset="./img/flat_white_img@2x.png 2x" alt="flat white.">
+            </picture>
+          </div>
           <div class="special__info">
             <h2 class="special__badge">Новинка!</h2>
             <p class="special__title">Декаф Флэт Уайт</p>
@@ -70,22 +90,30 @@
           <p class="advantages__title">Главные причины выбрать Drink2Go</p>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <img class="advantages__img" src="" alt="">
+              <svg class="advantages__img" width="52" height="56">
+                <use xlink:href="../img/sprite.svg#speed"></use>
+              </svg>
               <h3 class="advantages__item-name">Скорость</h3>
               <p class="advantages__text">Готовый напиток всегда под рукой — просто открой банку</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__img" src="" alt="">
+              <svg class="advantages__img" width="52" height="56">
+                <use xlink:href="../img/sprite.svg#comfort"></use>
+              </svg>
               <h3 class="advantages__item-name">Удобство</h3>
               <p class="advantages__text">Легко помещается и в карман, и в маленькую сумочку</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__img" src="" alt="">
+              <svg class="advantages__img" width="52" height="56">
+                <use xlink:href="../img/sprite.svg#courage"></use>
+              </svg>
               <h3 class="advantages__item-name">Бодрость</h3>
               <p class="advantages__text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__img" src="" alt="">
+              <svg class="advantages__img" width="52" height="56">
+                <use xlink:href="../img/sprite.svg#eco"></use>
+              </svg>
               <h3 class="advantages__item-name">Экологичность</h3>
               <p class="advantages__text">Вся упаковка сделана из перерабатываемых материалову</p>
             </li>
@@ -97,7 +125,10 @@
           <form class="catalog__filter" action="https://echo.htmlacademy.ru/" method="get" id="filter-form">
             <fieldset class="price">
               <legend class="price__title">Цена</legend>
-              <div class="price__slider"></div>
+              <div class="price__slider">
+                <span class="price__slider-thumb"></span>
+                <span class="visually-hidden">Слайдер выбора диапазона цен.</span>
+              </div>
               <div class="price__input-wrapper">
                 <label class="price__input-label">
                   <input  class="price__input" type="text" name="price" placeholder="0" max="1000">
@@ -110,16 +141,24 @@
             <fieldset class="milk-type">
               <legend class="milk-type__title">Наличие молока</legend>
               <label class="milk-type__input-label">
-                <input class="milk-type__input" type="radio" name="milk-type" value="no-matter">Неважно
+                <input class="milk-type__input" type="radio" name="milk-type" value="no-matter" checked>
+                <span class="milk-type__input-mark"></span>
+                <span class="milk-type__input-name">Неважно</span>
               </label>
               <label class="milk-type__input-label">
-                <input class="milk-type__input" type="radio" name="milk-type" value="animal">Только животное
+                <input class="milk-type__input" type="radio" name="milk-type" value="animal">
+                <span class="milk-type__input-mark"></span>
+                <span class="milk-type__input-name">Только животное</span>
               </label>
               <label class="milk-type__input-label">
-                <input class="milk-type__input" type="radio" name="milk-type" value="vegan">Только растительное
+                <input class="milk-type__input" type="radio" name="milk-type" value="vegan">
+                <span class="milk-type__input-mark"></span>
+                <span class="milk-type__input-name">Только растительное</span>
               </label>
               <label class="milk-type__input-label">
-                <input class="milk-type__input" type="radio" name="milk-type" value="without" disabled>Без молока
+                <input class="milk-type__input" type="radio" name="milk-type" value="without" disabled>
+                <span class="milk-type__input-mark"></span>
+                <span class="milk-type__input-name">Без молока</span>
               </label>
             </fieldset>
             <fieldset class="country">

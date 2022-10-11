@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 50px;
 }
 
 .milk-type__title {
@@ -10,4 +11,62 @@
   line-height: 24px;
   font-weight: 600;
   text-align: left;
+  margin-bottom: 22.25px;
+}
+
+.milk-type__input-label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: 21.45px;
+  }
+}
+
+.milk-type__input-name {
+  margin-left: 10px;
+}
+
+.milk-type__input {
+  position: absolute;
+
+  opacity: 0;
+  z-index: -1;
+
+  &:checked + .milk-type__input-mark {
+    border: 2px solid $base-primary;
+    background-color: $base-primary;
+    box-shadow: inset 0 0 0 2px $base-white;
+  }
+
+  // &:hover + .milk-type__input-mark {
+  //   border-color: $color-5;
+  // }
+
+  &:disabled + .milk-type__input-mark{
+    background-color: transparent;
+    border: 2px solid $light-grey;
+  }
+
+  &:disabled ~ .milk-type__input-name {
+    color: $base-grey;
+  }
+
+  // &:focus + .milk-type__input-mark {
+  //   outline: 2px solid $text-light-dark-1;
+  // }
+}
+
+.milk-type__input-mark {
+  width: 24px;
+  height: 24px;
+  background-color: $base-white;
+
+  border: 2px solid $base-grey;
+  border-radius: 50%;
+  box-sizing: border-box;
 }

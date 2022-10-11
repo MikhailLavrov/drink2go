@@ -1,10 +1,16 @@
 .special {
   background-color: $flat-white;
   padding: 20px;
+  padding-bottom: 60px;
+}
+
+.special__img-wrapper {
+  margin-bottom: 10px;
 }
 
 .special__title {
   margin: 0;
+  margin-bottom: 10px;
   font-size: 36px;
   line-height: 48px;
   font-weight: 700;
@@ -13,6 +19,7 @@
 
 .special__text {
   margin: 0;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 20px;
 }
@@ -21,12 +28,14 @@
   color: $base-primary;
   font-size: 16px;
   line-height: 32px;
+  margin-right: 6px;
 }
 
 .special__new-price {
   font-size: 20px;
   line-height: 32px;
   font-weight: 600;
+  margin-right: 20px;
 }
 
 .special__button {
@@ -40,4 +49,6 @@
 
 .special__badge {
   @include badge;
+
+  margin-bottom: 4px;
 }

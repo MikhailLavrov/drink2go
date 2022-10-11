@@ -1,9 +1,28 @@
+.user-nav {
+  display: flex;
+  align-items: center;
+}
+
 .user-nav__button {
   text-transform: uppercase;
   background-color: transparent;
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-nav__button span {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
 }
 
 .user-nav__link {
@@ -11,4 +30,17 @@
   text-decoration: none;
   color: $base-black;
   font-weight: 500;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-nav__link span {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
 }

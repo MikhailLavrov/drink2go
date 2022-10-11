@@ -3,8 +3,13 @@
   padding: 50px 20px 60px;
 }
 
+.advantages__img {
+  margin-bottom: 10px;
+}
+
 .advantages__title {
   margin: 0;
+  margin-bottom: 36px;
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
@@ -24,6 +29,7 @@
 
 .advantages__item-name {
   margin: 0;
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
@@ -37,4 +43,6 @@
 
 .advantages__badge {
   @include badge;
+
+  margin-bottom: 4px;
 }
