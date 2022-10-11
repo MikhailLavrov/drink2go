@@ -63,13 +63,13 @@
         <section class="special">
           <div class="special__img-wrapper">
             <picture>
-              <source media="(min-width: 1440px)" type="image/webp" srcset="./img/flat_white_desktop.webp 1x, ./img/flat_white_desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" type="image/webp" srcset="./img/flat_white_tablet.webp 1x, ./img/flat_white_tablet@2x.webp 2x">
-              <source type="image/webp" srcset="./img/flat_white_img.webp 1x, ./img/flat_white_img@2x.webp 2x">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="./img/new/flat_white_desktop.webp 1x, ./img/new/flat_white_desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="./img/new/flat_white_tablet.webp 1x, ./img/new/flat_white_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/new/flat_white_img.webp 1x, ./img/new/flat_white_img@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" type="image/png" srcset="./img/flat_white_desktop.png 1x, ./img/flat_white_desktop@2x.png 2x">
-              <source media="(min-width: 768px)" type="image/png" srcset="./img/flat_white_tablet.png 1x, ./img/flat_white_tablet@2x.png 2x">
-              <img class="special__img"  width="280" height="280" src="./img/flat_white_img.png" srcset="./img/flat_white_img@2x.png 2x" alt="flat white.">
+              <source media="(min-width: 1440px)" type="image/png" srcset="./img/new/flat_white_desktop.png 1x, ./img/new/flat_white_desktop@2x.png 2x">
+              <source media="(min-width: 768px)" type="image/png" srcset="./img/new/flat_white_tablet.png 1x, ./img/new/flat_white_tablet@2x.png 2x">
+              <img class="special__img"  width="280" height="280" src="./img/new/flat_white_img.png" srcset="./img/new/flat_white_img@2x.png 2x" alt="flat white.">
             </picture>
           </div>
           <div class="special__info">
@@ -165,23 +165,28 @@
               <legend class="country__title">Страна произрастания</legend>
               <label class="country__input-label">
                 <input class="country__input" type="checkbox" name="country" value="brasil" checked>
-                <span>Бразилия</span>
+                <span class="country__input-mark"></span>
+                <span class="country__input-name">Бразилия</span>
               </label>
               <label class="country__input-label">
                 <input class="country__input" type="checkbox" name="country" value="ethiopia">
-                <span>Эфиопия</span>
+                <span class="country__input-mark"></span>
+                <span class="country__input-name">Эфиопия</span>
               </label>
               <label class="country__input-label">
                 <input class="country__input" type="checkbox" name="country" value="colombia">
-                <span>Колумбия</span>
+                <span class="country__input-mark"></span>
+                <span class="country__input-name">Колумбия</span>
               </label>
               <label class="country__input-label">
                 <input class="country__input" type="checkbox" name="country" value="costa-rica">
-                <span>Коста-Рика</span>
+                <span class="country__input-mark"></span>
+                <span class="country__input-name">Коста-Рика</span>
               </label>
               <label class="country__input-label">
                 <input class="country__input" type="checkbox" name="country" value="peru" disabled>
-                <span>Перу</span>
+                <span class="country__input-mark"></span>
+                <span class="country__input-name">Перу</span>
               </label>
             </fieldset>
             <fieldset class="catalog__buttons">
@@ -199,7 +204,13 @@
             </div>
             <ul class="products__list">
               <li class="products__item">
-                <img class="products__img" src="" alt="">
+                <div class="special__img-wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="./img/catalog/coffee-can-1.webp 1x, ./img/catalog/coffee-can-1@2x.webp 2x">
+
+                    <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-1.png" srcset="./img/catalog/coffee-can-1@2x.png 2x" alt="coffee-can-1.">
+                  </picture>
+                </div>
                 <h3 class="products__title">Декаф Флэт Уайт</h3>
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
@@ -208,7 +219,13 @@
                 </div>
               </li>
               <li class="products__item">
-                <img class="products__img" src="" alt="">
+                <div class="special__img-wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="./img/catalog/coffee-can-2.webp 1x, ./img/catalog/coffee-can-2@2x.webp 2x">
+
+                    <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-2.png" srcset="./img/catalog/coffee-can-2@2x.png 2x" alt="coffee-can-1.">
+                  </picture>
+                </div>
                 <h3 class="products__title">Декаф Флэт Уайт</h3>
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
@@ -217,7 +234,13 @@
                 </div>
               </li>
               <li class="products__item">
-                <img class="products__img" src="" alt="">
+                <div class="special__img-wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="./img/catalog/coffee-can-3.webp 1x, ./img/catalog/coffee-can-3@2x.webp 2x">
+
+                    <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-3.png" srcset="./img/catalog/coffee-can-3@2x.png 2x" alt="coffee-can-1.">
+                  </picture>
+                </div>
                 <h3 class="products__title">Декаф Флэт Уайт</h3>
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
@@ -226,7 +249,13 @@
                 </div>
               </li>
               <li class="products__item">
-                <img class="products__img" src="" alt="">
+                <div class="special__img-wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="./img/catalog/coffee-can-4.webp 1x, ./img/catalog/coffee-can-4@2x.webp 2x">
+
+                    <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-4.png" srcset="./img/catalog/coffee-can-4@2x.png 2x" alt="coffee-can-1.">
+                  </picture>
+                </div>
                 <h3 class="products__title">Декаф Флэт Уайт</h3>
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
@@ -235,7 +264,13 @@
                 </div>
               </li>
               <li class="products__item">
-                <img class="products__img" src="" alt="">
+                <div class="special__img-wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="./img/catalog/coffee-can-5.webp 1x, ./img/catalog/coffee-can-5@2x.webp 2x">
+
+                    <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-5.png" srcset="./img/catalog/coffee-can-5@2x.png 2x" alt="coffee-can-1.">
+                  </picture>
+                </div>
                 <h3 class="products__title">Декаф Флэт Уайт</h3>
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
@@ -244,7 +279,13 @@
                 </div>
               </li>
               <li class="products__item">
-                <img class="products__img" src="" alt="">
+                <div class="special__img-wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="./img/catalog/coffee-can-6.webp 1x, ./img/catalog/coffee-can-6@2x.webp 2x">
+
+                    <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-6.png" srcset="./img/catalog/coffee-can-6@2x.png 2x" alt="coffee-can-1.">
+                  </picture>
+                </div>
                 <h3 class="products__title">Декаф Флэт Уайт</h3>
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">

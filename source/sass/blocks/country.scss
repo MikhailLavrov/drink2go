@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-bottom: 33.8px;
 }
 
 .country__title {
@@ -10,4 +14,79 @@
   line-height: 24px;
   font-weight: 600;
   text-align: left;
+  margin-bottom: 21.15px;
+}
+
+.country__input-label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: 20.33px;
+  }
+}
+
+.country__input-name {
+  margin-left: 10px;
+}
+
+.country__input-mark {
+  width: 42px;
+  height: 24px;
+  background-color: $base-grey;
+  position: relative;
+  transition: 0.4s;
+
+  border-radius: 12px;
+  box-sizing: border-box;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: $base-white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+  }
+}
+
+.country__input {
+  position: absolute;
+
+  opacity: 0;
+  z-index: -1;
+
+  &:checked + .country__input-mark {
+    background-color: $base-primary;
+  }
+
+  &:checked + .country__input-mark::before {
+    transform: translateX(18px);
+  }
+
+  // &:hover + .country__input-mark {
+  //   border-color: $color-5;
+  // }
+
+  &:disabled + .country__input-mark{
+    background-color: $light-grey;
+  }
+
+  &:disabled ~ .country__input-name {
+    color: $base-grey;
+  }
+
+  &:disabled + .country__input-mark::before {
+    background-color: $lightest-grey;
+  }
+
+  // &:focus + .country__input-mark {
+  //   outline: 2px solid $text-light-dark-1;
+  // }
 }
