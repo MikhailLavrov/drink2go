@@ -1,17 +1,6 @@
 .special {
   background-color: $flat-white;
   padding: 20px;
-  text-align: center;
-}
-
-.special__block-name {
-  margin: 0;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 4%;
-  color: $base-primary;
 }
 
 .special__title {
@@ -47,4 +36,8 @@
   line-height: 24px;
   color: $base-white;
   border-radius: 4px;
+}
+
+.special__badge {
+  @include badge;
 }

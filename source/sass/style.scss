@@ -1,4 +1,5 @@
 @import "vars.scss";
+@import "mixins.scss";
 @import './global/global.scss';
 @import './blocks/body.scss';
 @import './blocks/header.scss';
@@ -7,15 +8,23 @@
 @import './blocks/user-nav.scss';
 @import './blocks/main.scss';
 @import './blocks/special.scss';
-
-
-// .header__logo
+@import './blocks/advantages.scss';
+@import './blocks/catalog.scss';
+@import './blocks/price.scss';
+@import './blocks/milk-type.scss';
+@import './blocks/country.scss';
+@import './blocks/products.scss';
+@import './blocks/pagination.scss';
+@import './blocks/footer.scss';
+@import './blocks/socials.scss';
+@import './blocks/marketplace.scss';
+@import './blocks/media.scss';
+@import './blocks/contacts.scss';
+@import './blocks/developer.scss';
 
 // .logo
 
 // .logo__img
-
-// .header__menu
 
 // .menu__item
 
@@ -27,95 +36,37 @@
 
 // .special__offer
 
-
-
-// .advantages
-
-// .advantages__block-name
-
-// .advantages__title
-
-// .advantages__list
-
-// .advantages__item
-
 // .advantages__img
-
-// .advantages__item-name
-
-// .advantages__text
-
-// .catalog
-
-// .catalog__block-name
-
-// .catalog__title
 
 // .catalog__filter
 
 // .price
 
-// .price__title
-
 // .price__slider
 
 // .price__input-label
-
-// .price__input
-
-// .milk-type
-
-// .milk-type__title
 
 // .milk-type__input-label
 
 // .milk-type__input
 
-// .country
-
-// .country__title
-
 // .country__input-label
 
 // .country__input
 
-// .catalog__buttons
+// .catalog__button
 
 // .catalog__products
 
 // .products
 
-// .products__sort
-
-// .products__sort-title
-
-// .products__sort-select
-
-// .products__list
-
-// .products__item
-
 // .products__img
-
-// .products__title
-
-// .products__text
-
-// .products__offer
-
-// .products__price
-
-// .products__button
 
 // .products__pagination
 
-// .pagination-list
+// .pagination
 
-// .pagination-item
-
-// .pagination-link
-
-// .active-page
+// .pagination__item
 
 // .map
 
@@ -123,42 +74,16 @@
 
 // .footer
 
-// .footer__navigation
-
 // .footer__logo
-
-// .footer__socials
-
-// .socials
 
 // .socials__item
 
 // .socials__link
 
-// .footer__info
-
-// .marketplace
-
-// .marketplace__title
-
 // .marketplace__item
-
-// .marketplace__link
-
-// .media
-
-// .media__title
 
 // .media__item
 
-// .media__link
-
 // .contacts
 
-// .contacts__address
-
-// .contacts__phone
-
 // .developer
-
-// .developer__info

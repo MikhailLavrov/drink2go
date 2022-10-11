@@ -1,0 +1,38 @@
+.catalog {
+  padding: 50px 20px 44px;
+}
+
+.catalog__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.catalog__filter fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.catalog__button {
+  padding: 10px 15px;
+  min-width: 160px;
+  font-size: 13px;
+  line-height: 24px;
+  border-radius: 4px;
+}
+
+.catalog__button--submit {
+  color: $base-white;
+  background-color: $base-primary;
+}
+
+.catalog__button--reset {
+  background-color: $base-white;
+  color: $base-primary;
+}
+
+.catalog__badge {
+  @include badge;
+}

@@ -1,12 +1,17 @@
-.menu {
-  list-style: none;
+.media {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-.menu__link {
+.media__title {
+  @include h4-title;
+}
+
+.media__link {
   text-decoration: none;
   text-transform: uppercase;
   color: $base-black;
   font-weight: 500;
+  letter-spacing: 2%;
 }

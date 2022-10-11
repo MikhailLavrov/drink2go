@@ -1,9 +1,78 @@
 .header {
   padding: 12px 20px;
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.header__logo {
+  margin-right: auto;
   display: flex;
   align-items: center;
 }
 
-.header__navigation {
+.header__menu {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.header__user-menu {
   display: flex;
 }
+
+//*Кнопка меню
+.header__navigation-button {
+  display: block;
+  padding: 0;
+  width: 60px;
+  height: 100%;
+  position: relative;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+// Кнопка меню при ЗАКРЫТОМ меню (иконка бургер)
+.header__navigation-button--closed .header__navigation-button::before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: 0;
+  width: 16px;
+  height: 1.5px;
+  background-color: $base-black;
+  box-shadow: 0 -3.75px 0 0 $base-black, 0 3.75px 0 0 $base-black;
+}
+
+// // Кнопка меню при ОТКРЫТОМ меню (иконка крестик)
+// .header__navigation-button--opened .header__navigation-button {
+//   &::before,
+//   &::after {
+//     position: absolute;
+//     content: "";
+//     top: 50%;
+//     left: 0;
+//     width: 16px;
+//     height: 1.5px;
+//     background-color: $base-black;
+//   }
+
+//   &::before {
+//     transform: rotate(45deg);
+//   }
+
+//   &::after {
+//     transform: rotate(-45deg);
+//   }
+// }

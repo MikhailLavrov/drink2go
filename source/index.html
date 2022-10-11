@@ -16,27 +16,35 @@
   <div class="body__wrapper">
     <header class="header">
       <a class="header__logo logo" href="#">
-        <img class="logo__img" src="" alt="">
+        <svg width="32" height="36">
+          <use xlink:href="../img/sprite.svg#logo"></use>
+        </svg>
         <span class="logo__text">Интернет-магазин кофейных напитков</span>
+        <span class="visually-hidden">Логотип компании.</span>
       </a>
-      <ul class="header__menu menu">
-        <li class="menu__item">
-          <a class="menu__link" href="#">Главная</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Каталог</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Доставка</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">О нас</a>
-        </li>
-      </ul>
-      <nav class="header__navigation user-nav">
+      <nav class="header__navigation header__navigation-button--closed">
+        <button class="header__navigation-button" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <ul class="header__menu menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Каталог</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Доставка</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">О нас</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__user-menu user-nav">
         <button class="user-nav__button" type="button">Войти</button>
         <a class="user-nav__link" href="#">Корзина</a>
-      </nav>
+      </div>
     </header>
     <main class="main">
       <h1 class="visually-hidden">Интернет магазин кофейных напитков</h1>
@@ -45,7 +53,7 @@
         <section class="special">
           <img class="special__img" src="" alt="">
           <div class="special__info">
-            <h2 class="special__block-name">Новинка!</h2>
+            <h2 class="special__badge">Новинка!</h2>
             <p class="special__title">Декаф Флэт Уайт</p>
             <p class="special__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то,
               что нужно для расслабления после тяжёлого рабочего дня</p>
@@ -58,7 +66,7 @@
         </section>
         <!-- *advantages -->
         <section class="advantages">
-          <h2 class="advantages__block-name">Преимущества</h2>
+          <h2 class="advantages__badge">Преимущества</h2>
           <p class="advantages__title">Главные причины выбрать Drink2Go</p>
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -84,18 +92,20 @@
           </ul>
         </section>
         <section class="catalog">
-          <h2 class="catalog__block-name">Каталог</h2>
+          <h2 class="catalog__badge">Каталог</h2>
           <p class="catalog__title">Каталог кофейных напитков</p>
           <form class="catalog__filter" action="https://echo.htmlacademy.ru/" method="get" id="filter-form">
             <fieldset class="price">
               <legend class="price__title">Цена</legend>
               <div class="price__slider"></div>
-              <label class="price__input-label">
-                <input  class="price__input" type="number" name="price" placeholder="0" max="1000">
-              </label>
-              <label class="price__input-label">
-                <input  class="price__input" type="number" name="price" placeholder="1000" max="1000">
-              </label>
+              <div class="price__input-wrapper">
+                <label class="price__input-label">
+                  <input  class="price__input" type="text" name="price" placeholder="0" max="1000">
+                </label>
+                <label class="price__input-label">
+                  <input  class="price__input" type="text" name="price" placeholder="1000" max="1000">
+                </label>
+              </div>
             </fieldset>
             <fieldset class="milk-type">
               <legend class="milk-type__title">Наличие молока</legend>
@@ -136,8 +146,8 @@
               </label>
             </fieldset>
             <fieldset class="catalog__buttons">
-              <button type="submit">Применить фильтр</button>
-              <button type="reset">Сбросить фильтр</button>
+              <button class="catalog__button catalog__button--submit" type="submit">Применить фильтр</button>
+              <button class="catalog__button catalog__button--reset" type="reset">Сбросить фильтр</button>
             </fieldset>
           </form>
           <div class="catalog__products products">
@@ -204,22 +214,22 @@
                 </div>
               </li>
             </ul>
-            <div class="products__pagination">
-              <ul class="pagination-list">
-                <li class="pagination-item">
-                  <a class="pagination-link">Назад</a>
+            <div class="products__pagination pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__link">Назад</a>
                 </li>
-                <li class="pagination-item">
-                  <a class="pagination-link">1</a>
+                <li class="pagination__item">
+                  <a class="pagination__link">1</a>
                 </li>
-                <li class="pagination-item">
-                  <a class="pagination-link active-page">2</a>
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--active">2</a>
                 </li>
-                <li class="pagination-item">
-                  <a class="pagination-link">3</a>
+                <li class="pagination__item">
+                  <a class="pagination__link">3</a>
                 </li>
-                <li class="pagination-item">
-                  <a class="pagination-link">Вперёд</a>
+                <li class="pagination__item">
+                  <a class="pagination__link">Вперёд</a>
                 </li>
             </div>
           </div>
@@ -236,7 +246,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__navigation">\
+      <div class="footer__navigation">
         <a class="footer__logo logo" href="#">
           <img class="logo__img" src="" alt="">
           <span class="logo__text">Интернет-магазин кофейных напитков</span>
@@ -261,7 +271,7 @@
       </div>
       <section class="footer__info">
         <ul class="marketplace">
-          <h2 class="marketplace__title">Интернет-магазин</h2>
+          <h4 class="marketplace__title">Интернет-магазин</h4>
           <li class="marketplace__item">
             <a class="marketplace__link" href="#">Каталог</a>
           </li>
@@ -276,7 +286,7 @@
           </li>
         </ul>
         <ul class="media">
-          <h2 class="media__title">Медиа</h2>
+          <h4 class="media__title">Медиа</h4>
           <li class="media__item">
             <a class="media__link" href="#">Блог</a>
           </li>
@@ -288,6 +298,7 @@
           </li>
         </ul>
         <div class="contacts">
+          <h4 class="contacts__title">Контакты</h4>
           <p class="contacts__address">Санкт-Петербург, набережная реки Карповки, дом 5</p>
           <a class="contacts__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
         </div>

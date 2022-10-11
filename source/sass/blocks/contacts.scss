@@ -1,0 +1,16 @@
+.contacts__title {
+  @include h4-title;
+}
+
+.contacts__address {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts__phone {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $base-black;
+}
