@@ -19,9 +19,9 @@
         <svg width="32" height="36">
           <use xlink:href="../img/sprite.svg#logo"></use>
         </svg>
-        <span class="logo__text">Интернет-магазин кофейных напитков</span>
         <span class="visually-hidden">Логотип компании.</span>
       </a>
+      <span class="header__text">Интернет-магазин кофейных напитков</span>
       <nav class="header__navigation header__navigation-button--closed">
         <button class="header__navigation-button" type="button">
           <span class="visually-hidden">Открыть меню.</span>
@@ -73,7 +73,7 @@
             </picture>
           </div>
           <div class="special__info">
-            <h2 class="special__badge">Новинка!</h2>
+            <h2 class="special__badge badge">Новинка!</h2>
             <p class="special__title">Декаф Флэт Уайт</p>
             <p class="special__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то,
               что нужно для расслабления после тяжёлого рабочего дня</p>
@@ -86,7 +86,7 @@
         </section>
         <!-- *advantages -->
         <section class="advantages">
-          <h2 class="advantages__badge">Преимущества</h2>
+          <h2 class="advantages__badge badge">Преимущества</h2>
           <p class="advantages__title">Главные причины выбрать Drink2Go</p>
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -120,7 +120,7 @@
           </ul>
         </section>
         <section class="catalog">
-          <h2 class="catalog__badge">Каталог</h2>
+          <h2 class="catalog__badge badge">Каталог</h2>
           <p class="catalog__title">Каталог кофейных напитков</p>
           <form class="catalog__filter" action="https://echo.htmlacademy.ru/" method="get" id="filter-form">
             <fieldset class="price">
@@ -297,7 +297,12 @@
             <div class="products__pagination pagination">
               <ul class="pagination__list">
                 <li class="pagination__item">
-                  <a class="pagination__link">Назад</a>
+                  <a class="pagination__link">
+                    <svg width="6" height="10">
+                      <use xlink:href="../img/sprite.svg#previous"></use>
+                    </svg>
+                    <span class="pagination__link-name">Назад</span>
+                  </a>
                 </li>
                 <li class="pagination__item">
                   <a class="pagination__link">1</a>
@@ -309,7 +314,12 @@
                   <a class="pagination__link">3</a>
                 </li>
                 <li class="pagination__item">
-                  <a class="pagination__link">Вперёд</a>
+                  <a class="pagination__link">
+                    <svg width="6" height="10">
+                      <use xlink:href="../img/sprite.svg#next"></use>
+                    </svg>
+                    <span class="pagination__link-name">Вперёд</span>
+                  </a>
                 </li>
             </div>
           </div>
@@ -318,74 +328,114 @@
       <!-- *Map -->
       <section class="map">
         <h3 class="visually-hidden">Адрес на карте.</h3>
-        <iframe class="map__frame"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2984521306922!2d30.3228059997934!3d59.938830686690956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1648811503924!5m2!1sru!2sru"
-          width="320" style="border: 0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822608413316!2d30.31522021609819!3d59.968265981886944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sby!4v1665562004219!5m2!1sru!2sby" width="320" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__navigation">
-        <a class="footer__logo logo" href="#">
-          <img class="logo__img" src="" alt="">
-          <span class="logo__text">Интернет-магазин кофейных напитков</span>
-        </a>
-        <ul class="footer__socials socials">
-          <li class="socials__item">
-            <a class="socials__link">
-              <span class="visually-hidden">VK.</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link">
-              <span class="visually-hidden">Pinterest.</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link">
-              <span class="visually-hidden">Одноклассники.</span>
-            </a>
-          </li>
-        </ul>
+      <div class="footer__wrapper">
+        <div class="footer__navigation-wrapper">
+          <a class="footer__logo logo" href="#">
+          <span class="footer__logo-text logo__text">d</span>
+          <svg width="32" height="36">
+            <use xlink:href="../img/sprite.svg#logo"></use>
+          </svg>
+          <span class="header__logo-text logo__text">g</span>
+          <span class="visually-hidden">Логотип компании.</span>
+          </a>
+          <span class="header__text">Интернет-магазин кофейных напитков</span>
+          <ul class="footer__socials socials">
+            <li class="socials__item">
+              <a class="socials__link">
+                <svg width="20" height="20">
+                  <use xlink:href="../img/sprite.svg#vk"></use>
+                </svg>
+                <span class="visually-hidden">VK.</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link">
+                <svg width="22" height="22">
+                  <use xlink:href="../img/sprite.svg#pinterest"></use>
+                </svg>
+                <span class="visually-hidden">Pinterest.</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link">
+                <svg width="20" height="20">
+                  <use xlink:href="../img/sprite.svg#odnoklassniki"></use>
+                </svg>
+                <span class="visually-hidden">Одноклассники.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <section class="footer__info">
-        <ul class="marketplace">
-          <h4 class="marketplace__title">Интернет-магазин</h4>
-          <li class="marketplace__item">
-            <a class="marketplace__link" href="#">Каталог</a>
-          </li>
-          <li class="marketplace__item">
-            <a class="marketplace__link" href="#">Доставка</a>
-          </li>
-          <li class="marketplace__item">
-            <a class="marketplace__link" href="#">Способы оплаты</a>
-          </li>
-          <li class="marketplace__item">
-            <a class="marketplace__link" href="#">О нас</a>
-          </li>
-        </ul>
-        <ul class="media">
-          <h4 class="media__title">Медиа</h4>
-          <li class="media__item">
-            <a class="media__link" href="#">Блог</a>
-          </li>
-          <li class="media__item">
-            <a class="media__link" href="#">Информация для СМИ</a>
-          </li>
-          <li class="media__item">
-            <a class="media__link" href="#">Правовая информация</a>
-          </li>
-        </ul>
-        <div class="contacts">
-          <h4 class="contacts__title">Контакты</h4>
-          <p class="contacts__address">Санкт-Петербург, набережная реки Карповки, дом 5</p>
-          <a class="contacts__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
+        <div class="footer__wrapper">
+          <ul class="footer__list">
+            <h4 class="footer__title">Интернет-магазин</h4>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Каталог</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Доставка</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Способы оплаты</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">О нас</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__wrapper">
+          <ul class="footer__list">
+            <h4 class="footer__title">Медиа</h4>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Блог</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Информация для СМИ</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Правовая информация</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__wrapper">
+          <ul class="footer__list contacts">
+            <h4 class="footer__title contacts__title">Контакты</h4>
+            <li class="contacts__item">
+              <div class="contacts__wrapper">
+                <svg class="contacts__img" width="13" height="16">
+                  <use xlink:href="../img/sprite.svg#contacts"></use>
+                </svg>
+                <span class="contacts__address">Санкт-Петербург, набережная реки Карповки, дом 5</span>
+              </div>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__wrapper contacts__link" href="tel:+79999999999">
+                <svg class="contacts__img" width="13" height="16">
+                  <use xlink:href="../img/sprite.svg#phone"></use>
+                </svg>
+                <span class="contacts__phone">+7 (999) 999-99-99</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
-      <span class="developer">
-        <a class="developer__info" href="#">Разработано в HTML Academy</a>
-      </span>
+      <div class="footer__developer developer">
+        <p class="developer__text">Разработано в</p>
+        <a class="developer__logo" href="#">
+          <span class="developer__logo-text">HTML Academy</span>
+          <svg width="12" height="16">
+            <use xlink:href="../img/sprite.svg#academy-logo"></use>
+          </svg>
+        </a>
+      </div>
     </footer>
   </div>
   <script src="/js/script.js" type="module"></script>

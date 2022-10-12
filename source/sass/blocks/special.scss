@@ -5,7 +5,7 @@
 }
 
 .special__img-wrapper {
-  margin-bottom: 10px;
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +51,6 @@
 }
 
 .special__badge {
-  @include badge;
-
+  margin: 0;
   margin-bottom: 4px;
 }

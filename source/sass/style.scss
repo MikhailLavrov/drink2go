@@ -1,5 +1,4 @@
 @import "vars.scss";
-@import "mixins.scss";
 @import './global/global.scss';
 @import './blocks/body.scss';
 @import './blocks/header.scss';
@@ -17,10 +16,10 @@
 @import './blocks/pagination.scss';
 @import './blocks/footer.scss';
 @import './blocks/socials.scss';
-@import './blocks/marketplace.scss';
-@import './blocks/media.scss';
 @import './blocks/contacts.scss';
 @import './blocks/developer.scss';
+@import './blocks/developer.scss';
+@import './blocks/badge.scss';
 
 // .logo
 

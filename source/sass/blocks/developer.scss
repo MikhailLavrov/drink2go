@@ -1,6 +1,29 @@
-.developer__info {
+.developer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.developer__text,
+.developer__logo-text {
   font-size: 12px;
   line-height: 16px;
   color: $base-grey;
+}
+
+.developer__logo {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.developer__text {
+  margin: 0;
+  margin-right: 3px;
+  text-decoration: none;
+}
+
+.developer__logo-text {
+  margin-right: 4px;
 }

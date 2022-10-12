@@ -42,7 +42,6 @@
 }
 
 .advantages__badge {
-  @include badge;
-
+  margin: 0;
   margin-bottom: 4px;
 }
