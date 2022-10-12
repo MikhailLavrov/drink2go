@@ -7,15 +7,18 @@
 
   @media (min-width: $tablet) {
     min-height: 80px;
-    display: grid;
-    grid-template-columns: 120px auto 120px;
-    gap: 20px;
   }
 }
 
 .header__logo-wrapper {
   margin-left: 20px;
   margin-right: auto;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    max-width: 320px;
+  }
 }
 
 .header__logo {
@@ -32,6 +35,9 @@
 
 .header__text {
   display: none;
+  max-width: 126px;
+  margin-left: 20px;
+  text-align: left;
 
   @media (min-width: $desktop) {
     display: block;
@@ -53,11 +59,13 @@
   @media (min-width: $tablet) {
     margin-right: 20px;
     justify-content: end;
+    margin-left: auto;
   }
 }
 
 .header__navigation {
   order: 10;
+
   @media (min-width: $tablet) {
     order: 0;
   }

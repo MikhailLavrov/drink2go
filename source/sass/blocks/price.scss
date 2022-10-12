@@ -7,6 +7,10 @@
   @media (min-width: $tablet) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
 }
 
 .price__title {

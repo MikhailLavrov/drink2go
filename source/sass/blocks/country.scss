@@ -12,11 +12,15 @@
   @media (min-width: $tablet) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
 }
 
 .country__title {
   padding: 0;
-  margin-bottom: 21.15px;
+  margin-bottom: 20px;
 
   font-size: 16px;
   line-height: 24px;
@@ -35,7 +39,7 @@
   cursor: pointer;
 
   &:not(:last-child) {
-    margin-bottom: 20.33px;
+    margin-bottom: 20px;
   }
 }
 

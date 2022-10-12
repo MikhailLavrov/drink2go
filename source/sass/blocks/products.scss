@@ -17,6 +17,10 @@
     justify-content: end;
     padding: 0 20px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
 }
 
 .products__sort-select {
@@ -56,6 +60,14 @@
     grid-auto-flow: dense;
     margin-bottom: 70px;
     padding: 0 20px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 0;
+    padding: 0;
+    padding-right: 40px;
+    margin-bottom: 60px;
   }
 }
 
@@ -139,4 +151,10 @@
 
 .products__button svg {
   margin-right: 6px;
+}
+
+.products__pagination {
+  @media (min-width: $desktop) {
+    grid-column: 1/-1;
+  }
 }

@@ -10,6 +10,10 @@
   @media (min-width: $tablet) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 20px;
+  }
 }
 
 .milk-type__title {
@@ -18,7 +22,7 @@
   line-height: 24px;
   font-weight: 600;
   text-align: left;
-  margin-bottom: 22.25px;
+  margin-bottom: 20px;
 }
 
 .milk-type__input-label {
@@ -30,7 +34,7 @@
   cursor: pointer;
 
   &:not(:last-child) {
-    margin-bottom: 21.45px;
+    margin-bottom: 20px;
   }
 }
 
