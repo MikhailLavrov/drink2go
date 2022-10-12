@@ -15,20 +15,24 @@
 <body class="body">
   <div class="body__wrapper">
     <header class="header">
-      <a class="header__logo logo" href="#">
-        <svg width="32" height="36">
-          <use xlink:href="../img/sprite.svg#logo"></use>
-        </svg>
-        <span class="visually-hidden">Логотип компании.</span>
-      </a>
-      <span class="header__text">Интернет-магазин кофейных напитков</span>
+      <div class="header__logo-wrapper">
+        <a class="header__logo logo" href="#">
+          <span class="header__logo-text logo__text">d</span>
+          <svg width="32" height="36">
+            <use xlink:href="../img/sprite.svg#logo"></use>
+          </svg>
+          <span class="header__logo-text logo__text">g</span>
+          <span class="visually-hidden">Логотип компании.</span>
+        </a>
+        <span class="header__text">Интернет-магазин кофейных напитков</span>
+      </div>
       <nav class="header__navigation header__navigation-button--closed">
         <button class="header__navigation-button" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <ul class="header__menu menu">
           <li class="menu__item">
-            <a class="menu__link" href="#">Главная</a>
+            <a class="menu__link menu__link--active" href="#">Главная</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Каталог</a>
@@ -126,7 +130,12 @@
             <fieldset class="price">
               <legend class="price__title">Цена</legend>
               <div class="price__slider">
-                <span class="price__slider-thumb"></span>
+                <button class="price__slider-thumb price__slider-thumb--from" type="button">
+                  <span class="visually-hidden">Кнопка выбора цены от.</span>
+                </button>
+                <button class="price__slider-thumb price__slider-thumb--to" type="button">
+                  <span class="visually-hidden">Кнопка выбора цены до.</span>
+                </button>
                 <span class="visually-hidden">Слайдер выбора диапазона цен.</span>
               </div>
               <div class="price__input-wrapper">
@@ -134,7 +143,7 @@
                   <input  class="price__input" type="text" name="price" placeholder="0" max="1000">
                 </label>
                 <label class="price__input-label">
-                  <input  class="price__input" type="text" name="price" placeholder="1000" max="1000">
+                  <input  class="price__input" type="text" name="price" placeholder="1000" value="1000">
                 </label>
               </div>
             </fieldset>
@@ -199,7 +208,9 @@
               <p class="products__sort-title">Сортировка:</p>
               <select class="products__sort-select" name="sort" form="filter-form">
                 <option value="default">по умолчанию</option>
-                <option value="price">по стоимости</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="cheap">сначала дешёвые</option>
+                <option value="rating">высокий рейтинг</option>
               </select>
             </div>
             <ul class="products__list">

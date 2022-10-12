@@ -4,12 +4,10 @@
   }
 }
 
-
 .contacts__wrapper {
   display: grid;
   grid-template-columns: auto 1fr;
 }
-
 
 .contacts__address {
   font-size: 14px;
@@ -21,9 +19,9 @@
 }
 
 .contacts__phone {
-  color: $base-black;
   font-size: 14px;
   line-height: 20px;
+  color: $base-black;
 }
 
 .contacts__img {

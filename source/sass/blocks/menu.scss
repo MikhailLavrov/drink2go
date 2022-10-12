@@ -4,9 +4,39 @@
   padding: 0;
 }
 
+.menu__item {
+  display: flex;
+}
+
 .menu__link {
   text-decoration: none;
   text-transform: uppercase;
   color: $base-black;
   font-weight: 500;
+  padding: 32px 20px;
+  box-sizing: border-box;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: $base-primary;
+  }
+
+  &:active:not(.menu__link--active) {
+    background-color: $base-secondary;
+  }
+}
+
+.menu__link--active {
+  color: $base-primary;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: $base-primary;
+  }
 }

@@ -6,20 +6,35 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    padding: 12px 20px;
+    min-height: 80px;
+    display: grid;
+    grid-template-columns: 120px auto 120px;
+    gap: 20px;
   }
 }
 
-.header__logo {
-  margin-right: auto;
+.header__logo-wrapper {
   margin-left: 20px;
+  margin-right: auto;
+}
+
+.header__logo {
   display: flex;
   align-items: center;
 }
 
+.header__logo-text {
+  display: none;
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
 .header__text {
-  @media (max-width: $tablet) {
-    display: none;
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
   }
 }
 
@@ -28,15 +43,24 @@
 
   @media (min-width: $tablet) {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
 .header__user-menu {
   display: flex;
+  @media (min-width: $tablet) {
+    margin-right: 20px;
+    justify-content: end;
+  }
 }
 
 .header__navigation {
   order: 10;
+  @media (min-width: $tablet) {
+    order: 0;
+  }
 }
 
 //*Кнопка меню

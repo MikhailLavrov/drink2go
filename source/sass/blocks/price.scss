@@ -39,21 +39,35 @@
   border-radius: 50%;
   background-color: $base-white;
   box-shadow: inset 0 0 0 2px $primary-lighter;
-  position: relative;
-  top: -10.5px;
   cursor: pointer;
+  position: absolute;
+  top: -10.5px;
 
-  &::before {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: $base-white;
-    box-shadow: inset 0 0 0 2px $primary-lighter;
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 70vw;
+  &:hover,
+  &:focus {
+    background-color: #dbcffa;
+    box-shadow: inset 0 0 0 4px $base-white;
+    outline: 2px solid $primary-lighter;
+    outline-offset: -2px;
   }
+
+  &:active {
+    border: 2px solid $base-primary;
+    background-color: $base-primary;
+    box-shadow: inset 0 0 0 2px $base-white;
+    outline: none;
+  }
+
+  &:disabled {
+    box-shadow: inset 0 0 0 2px $base-grey;
+    outline: none;
+    background-color: $lightest-grey;
+    border: none;
+  }
+}
+
+.price__slider-thumb--to {
+  left: 70vw;
 }
 
 .price__input-wrapper {
@@ -75,4 +89,19 @@
   box-shadow: inset 0 0 0 2px $primary-lighter;
   border: none;
   box-sizing: border-box;
+
+  &::placeholder {
+    color: $base-grey;
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 2px $primary-darker;
+    outline: none;
+  }
+
+  &:disabled {
+    box-shadow: inset 0 0 0 2px $light-grey;
+    background-color: transparent;
+    color: $base-grey;
+  }
 }

@@ -5,6 +5,7 @@
 .catalog__title {
   margin: 0;
   margin-bottom: 20.65px;
+
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
@@ -12,20 +13,24 @@
 
 .catalog__buttons {
   margin: 0;
+  margin-bottom: 40.45px;
   padding: 0;
-  border: none;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
   gap: 24.5px;
-  margin-bottom: 40.45px;
+  border: none;
 }
 
 .catalog__button {
   padding: 10px 15px;
   min-width: 160px;
+
   font-size: 13px;
   line-height: 24px;
+
   border-radius: 4px;
 }
 
@@ -35,8 +40,8 @@
 }
 
 .catalog__button--reset {
-  background-color: $base-white;
   color: $base-primary;
+  background-color: $base-white;
 }
 
 .catalog__badge {

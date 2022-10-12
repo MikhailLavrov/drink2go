@@ -1,28 +1,33 @@
 .country {
+  margin: 0;
+  margin-bottom: 33.8px;
+  padding: 0;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0;
-  padding: 0;
+
   border: none;
-  margin-bottom: 33.8px;
 }
 
 .country__title {
   padding: 0;
+  margin-bottom: 21.15px;
+
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   text-align: left;
-  margin-bottom: 21.15px;
 }
 
 .country__input-label {
   display: flex;
   align-items: center;
+  position: relative;
+
   font-size: 16px;
   line-height: 24px;
-  position: relative;
+
   cursor: pointer;
 
   &:not(:last-child) {
@@ -37,22 +42,23 @@
 .country__input-mark {
   width: 42px;
   height: 24px;
-  background-color: $base-grey;
-  position: relative;
-  transition: 0.4s;
 
-  border-radius: 12px;
+  position: relative;
   box-sizing: border-box;
+
+  background-color: $base-grey;
+  border-radius: 12px;
+  transition: 0.4s;
 
   &::before {
     position: absolute;
     content: "";
     width: 20px;
     height: 20px;
-    background-color: $base-white;
-    border-radius: 50%;
     top: 2px;
     left: 2px;
+    background-color: $base-white;
+    border-radius: 50%;
   }
 }
 
@@ -62,19 +68,29 @@
   opacity: 0;
   z-index: -1;
 
+  &:checked:disabled + .country__input-mark::before {
+    transform: translateX(18px);
+    background-color: $base-grey;
+  }
+
+  &:hover + .country__input-mark,
+  &:focus + .country__input-mark {
+    outline: 2px solid $primary-lighter;
+    outline-offset: -2px;
+    background-color: $primary-opacity;
+  }
+
   &:checked + .country__input-mark {
     background-color: $base-primary;
+    outline: none;
   }
 
   &:checked + .country__input-mark::before {
     transform: translateX(18px);
   }
 
-  // &:hover + .country__input-mark {
-  //   border-color: $color-5;
-  // }
-
   &:disabled + .country__input-mark{
+    outline: none;
     background-color: $light-grey;
   }
 
@@ -85,8 +101,4 @@
   &:disabled + .country__input-mark::before {
     background-color: $lightest-grey;
   }
-
-  // &:focus + .country__input-mark {
-  //   outline: 2px solid $text-light-dark-1;
-  // }
 }
