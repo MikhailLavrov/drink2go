@@ -12,6 +12,11 @@
   justify-content: space-between;
   margin-bottom: 20px;
   align-items: center;
+
+  @media (min-width: $tablet) {
+    justify-content: end;
+    padding: 0 20px;
+  }
 }
 
 .products__sort-select {
@@ -43,6 +48,15 @@
   margin-bottom: 40px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    grid-auto-flow: dense;
+    margin-bottom: 70px;
+    padding: 0 20px;
+  }
 }
 
 .products__item {
@@ -53,6 +67,25 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+
+  @media (min-width: $tablet) {
+    padding: 50px 30px 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.products__img-wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .products__title {
@@ -61,6 +94,12 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
 }
 
 .products__text {
@@ -68,10 +107,15 @@
   margin-bottom: 16px;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .products__offer {
   display: flex;
+  align-items: center;
 }
 
 .products__price {
@@ -89,4 +133,10 @@
   padding: 8px 20px;
   border-radius: 4px;
   background-color: $base-primary;
+  display: flex;
+  align-items: center;
+}
+
+.products__button svg {
+  margin-right: 6px;
 }

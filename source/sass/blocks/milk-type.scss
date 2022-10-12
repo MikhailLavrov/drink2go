@@ -6,6 +6,10 @@
   padding: 0;
   border: none;
   margin-bottom: 22.07px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .milk-type__title {

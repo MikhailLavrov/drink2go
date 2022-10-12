@@ -4,6 +4,10 @@
   margin: 0;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    justify-content: end;
+  }
 }
 
 .pagination__link {
@@ -16,16 +20,36 @@
   font-size: 16px;
   line-height: 24px;
   color: $base-primary;
+  cursor: pointer;
 
   &--active {
     background-color: transparent;
     font-weight: 600;
     color: $base-black;
+    cursor: default;
+
+    @media (min-width: $tablet) {
+      min-width: 80px;
+    }
+  }
+}
+
+.pagination__link--utter {
+  @media (min-width: $tablet) {
+    min-width: 150px;
+  }
+}
+
+.pagination__link--utter svg {
+  @media (min-width: $tablet) {
+    display: none;
   }
 }
 
 .pagination__link-name {
-  @media (max-width: $tablet) {
-    display: none;
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
   }
 }

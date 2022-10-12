@@ -1,0 +1,25 @@
+.map__frame {
+  margin: 0 auto;
+}
+
+.map--mobile {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.map--tablet {
+  display: none;
+
+  @media (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+    display: block;
+  }
+}
+
+.map--desktop {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}

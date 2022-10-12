@@ -1,3 +1,9 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .footer__logo {
   margin-right: auto;
 }
@@ -10,6 +16,10 @@
   padding: 22px 20px;
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet) {
+    padding: 40px 20px 30px;
+  }
 }
 
 .footer__socials {
@@ -18,11 +28,20 @@
   margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 39px;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 160px;
 }
 
 .footer__info {
   text-align: left;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+  }
 }
 
 .footer__list {
@@ -30,10 +49,18 @@
   padding: 0;
   list-style: none;
   padding: 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .footer__developer {
   padding: 20px 20px 30px;
+
+  @media (min-width: $tablet) {
+    padding: 30px 20px 40px;
+  }
 }
 
 .footer__title {
@@ -58,5 +85,19 @@
 .footer__item {
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+}
+
+.footer__logo-text--short {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.footer__logo-text--full {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
   }
 }

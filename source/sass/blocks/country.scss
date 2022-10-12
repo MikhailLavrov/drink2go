@@ -8,6 +8,10 @@
   align-items: flex-start;
 
   border: none;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .country__title {
