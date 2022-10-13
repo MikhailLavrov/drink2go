@@ -1,11 +1,11 @@
 .map {
   height: 420px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     height: 480px;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     height: 540px;
   }
 }

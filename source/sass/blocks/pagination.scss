@@ -7,12 +7,12 @@
 
   list-style: none;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     justify-content: end;
     transform: translateX(20px);
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     justify-content: end;
     transform: translateX(40px);
   }
@@ -38,20 +38,20 @@
     background-color: transparent;
     cursor: default;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet-width) {
       min-width: 80px;
     }
   }
 
   &--utter {
-    @media (min-width: $tablet) {
+    @media (min-width: $tablet-width) {
       min-width: 150px;
     }
   }
 }
 
 .pagination__link--utter svg {
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -59,7 +59,7 @@
 .pagination__link-name {
   display: none;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }

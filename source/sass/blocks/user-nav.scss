@@ -21,7 +21,7 @@
     color: $base-primary;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     height: 80px;
   }
 }
@@ -42,7 +42,7 @@
 .user-nav__link span {
   display: none;
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     margin-left: 7px;
     display: block;
   }

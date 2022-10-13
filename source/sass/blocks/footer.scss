@@ -4,7 +4,7 @@
   flex-direction: column;
   box-sizing: border-box;
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     padding: 40px;
     display: grid;
     grid-template-columns: 318px auto;
@@ -16,7 +16,7 @@
 .footer__logo {
   margin-right: auto;
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 10px;
   }
 }
@@ -27,7 +27,7 @@
   font-size: 14px;
   line-height: 20px;
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     display: block;
   }
 }
@@ -35,7 +35,7 @@
 .footer__wrapper {
   border-bottom: 1px solid $base-secondary;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     border-bottom: none;
   }
 }
@@ -45,11 +45,11 @@
   display: flex;
   align-items: center;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     padding: 40px 20px 30px;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     padding: 0;
     flex-direction: column;
     row-gap: 50px;
@@ -68,7 +68,7 @@
   gap: 20px;
   flex-wrap: wrap;
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     margin-left: 0;
     margin-right: auto;
   }
@@ -77,14 +77,14 @@
 .footer__info {
   text-align: left;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     padding: 0;
   }
 }
@@ -95,7 +95,7 @@
 
   list-style: none;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     padding: 0;
   }
 }
@@ -103,11 +103,11 @@
 .footer__developer {
   padding: 20px 20px 30px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     padding: 30px 20px 40px;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     grid-column: 1/-1;
     padding: 0;
   }
@@ -139,7 +139,7 @@
 }
 
 .footer__logo-text--short {
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -147,7 +147,7 @@
 .footer__logo-text--full {
   display: none;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }

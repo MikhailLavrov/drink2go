@@ -9,11 +9,11 @@
 
   border: none;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 20px;
   }
 }

@@ -3,11 +3,11 @@
 
   background-color: $base-white;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     padding: 60px 30px 100px;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     padding: 100px 40px 120px;
   }
 }
@@ -15,7 +15,7 @@
 .advantages__img {
   margin-bottom: 10px;
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 }
@@ -28,13 +28,13 @@
   line-height: 36px;
   font-weight: 700;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 64px;
     margin-bottom: 60px;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 80px;
   }
 }
@@ -45,14 +45,14 @@
 
   list-style: none;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 50px;
     column-gap: 30px;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
@@ -63,7 +63,7 @@
     margin-bottom: 32px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 50px auto;
     gap: 20px;
@@ -73,7 +73,7 @@
     }
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,7 +89,7 @@
   line-height: 32px;
   font-weight: 700;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 10px;
@@ -97,11 +97,11 @@
 }
 
 .advantages__text-wrapper {
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     text-align: left;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-width) {
     text-align: center;
   }
 }
@@ -112,7 +112,7 @@
   font-size: 14px;
   line-height: 20px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
   }
