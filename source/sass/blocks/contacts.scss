@@ -4,6 +4,10 @@
   }
 }
 
+.contacts__wrapper svg {
+  fill: $base-primary;
+}
+
 .contacts__wrapper {
   display: grid;
   grid-template-columns: auto 1fr;

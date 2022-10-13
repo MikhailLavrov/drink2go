@@ -1,4 +1,6 @@
 @import "vars.scss";
+@import './global/fonts.scss';
+@import './global/global.scss';
 @import './blocks/advantages.scss';
 @import './blocks/badge.scss';
 @import './blocks/button.scss';
@@ -8,7 +10,6 @@
 @import './blocks/country.scss';
 @import './blocks/developer.scss';
 @import './blocks/footer.scss';
-@import './global/global.scss';
 @import './blocks/header.scss';
 @import './blocks/logo.scss';
 @import './blocks/main.scss';

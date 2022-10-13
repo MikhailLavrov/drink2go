@@ -98,6 +98,10 @@
   border: none;
   cursor: pointer;
 
+  &:active {
+    background-color: $base-secondary;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }

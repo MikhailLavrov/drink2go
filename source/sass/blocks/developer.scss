@@ -11,12 +11,34 @@
   color: $base-grey;
 }
 
+.developer__logo svg {
+  fill: $base-grey;
+}
+
 .developer__logo {
   display: flex;
   align-items: center;
 
   text-decoration: none;
   cursor: pointer;
+
+  &:hover span,
+  &:focus span {
+    color: $base-primary;
+  }
+
+  &:active span {
+    color: $primary-darker;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $base-primary;
+  }
+
+  &:active svg {
+    fill: $primary-darker;
+  }
 }
 
 .developer__text {

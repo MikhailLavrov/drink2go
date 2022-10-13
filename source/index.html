@@ -5,10 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
   <title>Coffeeshop</title>
 </head>
 
@@ -46,13 +45,13 @@
         </ul>
       </nav>
       <div class="header__user-menu user-nav">
-        <button class="user-nav__button" type="button">
+        <button class="user-nav__button user-nav__button--enter" type="button">
           <svg width="16" height="16">
             <use xlink:href="../img/sprite.svg#enter"></use>
           </svg>
           <span>Войти</span>
         </button>
-        <a class="user-nav__link" href="#">
+        <a class="user-nav__button user-nav__button--basket" href="#">
           <svg width="16" height="16">
             <use xlink:href="../img/sprite.svg#basket"></use>
           </svg>
@@ -222,15 +221,16 @@
               </select>
             </div>
             <ul class="products__list">
-              <li class="products__item">
-                <div class="products__img-wrapper">
-                  <picture>
-                    <source type="image/webp" srcset="./img/catalog/coffee-can-1.webp 1x, ./img/catalog/coffee-can-1@2x.webp 2x">
-
-                    <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-1.png" srcset="./img/catalog/coffee-can-1@2x.png 2x" alt="coffee-can-1.">
-                  </picture>
-                </div>
-                <h3 class="products__title">Декаф Флэт Уайт</h3>
+              <li class="products__item" tabindex="0">
+                <a class="products__link">
+                  <div class="products__img-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/catalog/coffee-can-1.webp 1x, ./img/catalog/coffee-can-1@2x.webp 2x">
+                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-1.png" srcset="./img/catalog/coffee-can-1@2x.png 2x" alt="coffee-can-1.">
+                    </picture>
+                  </div>
+                  <h3 class="products__title">Декаф Флэт Уайт</h3>
+                </a>
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
                   <p class="products__price">225₽</p>
@@ -242,15 +242,16 @@
                   </button>
                 </div>
               </li>
-              <li class="products__item">
-                <div class="products__img-wrapper">
-                  <picture>
-                    <source type="image/webp" srcset="./img/catalog/coffee-can-2.webp 1x, ./img/catalog/coffee-can-2@2x.webp 2x">
-
-                    <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-2.png" srcset="./img/catalog/coffee-can-2@2x.png 2x" alt="coffee-can-1.">
-                  </picture>
-                </div>
-                <h3 class="products__title">Декаф Флэт Уайт</h3>
+              <li class="products__item" tabindex="0">
+                <a class="products__link">
+                  <div class="products__img-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/catalog/coffee-can-2.webp 1x, ./img/catalog/coffee-can-2@2x.webp 2x">
+                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-2.png" srcset="./img/catalog/coffee-can-2@2x.png 2x" alt="coffee-can-1.">
+                    </picture>
+                  </div>
+                  <h3 class="products__title">Декаф Флэт Уайт</h3>
+                </a>
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
                   <p class="products__price">225₽</p>
@@ -262,15 +263,16 @@
                   </button>
                 </div>
               </li>
-              <li class="products__item">
-                <div class="products__img-wrapper">
-                  <picture>
-                    <source type="image/webp" srcset="./img/catalog/coffee-can-3.webp 1x, ./img/catalog/coffee-can-3@2x.webp 2x">
-
-                    <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-3.png" srcset="./img/catalog/coffee-can-3@2x.png 2x" alt="coffee-can-1.">
-                  </picture>
-                </div>
-                <h3 class="products__title">Декаф Флэт Уайт</h3>
+              <li class="products__item" tabindex="0">
+                <a class="products__link">
+                  <div class="products__img-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/catalog/coffee-can-3.webp 1x, ./img/catalog/coffee-can-3@2x.webp 2x">
+                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-3.png" srcset="./img/catalog/coffee-can-3@2x.png 2x" alt="coffee-can-1.">
+                    </picture>
+                  </div>
+                  <h3 class="products__title">Декаф Флэт Уайт</h3>
+                </a>
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
                   <p class="products__price">225₽</p>
@@ -282,15 +284,16 @@
                   </button>
                 </div>
               </li>
-              <li class="products__item">
-                <div class="products__img-wrapper">
-                  <picture>
-                    <source type="image/webp" srcset="./img/catalog/coffee-can-4.webp 1x, ./img/catalog/coffee-can-4@2x.webp 2x">
-
-                    <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-4.png" srcset="./img/catalog/coffee-can-4@2x.png 2x" alt="coffee-can-1.">
-                  </picture>
-                </div>
-                <h3 class="products__title">Декаф Флэт Уайт</h3>
+              <li class="products__item" tabindex="0">
+                <a class="products__link">
+                  <div class="products__img-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/catalog/coffee-can-4.webp 1x, ./img/catalog/coffee-can-4@2x.webp 2x">
+                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-4.png" srcset="./img/catalog/coffee-can-4@2x.png 2x" alt="coffee-can-1.">
+                    </picture>
+                  </div>
+                  <h3 class="products__title">Декаф Флэт Уайт</h3>
+                </a>
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
                   <p class="products__price">225₽</p>
@@ -302,15 +305,16 @@
                   </button>
                 </div>
               </li>
-              <li class="products__item">
-                <div class="products__img-wrapper">
-                  <picture>
-                    <source type="image/webp" srcset="./img/catalog/coffee-can-5.webp 1x, ./img/catalog/coffee-can-5@2x.webp 2x">
-
-                    <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-5.png" srcset="./img/catalog/coffee-can-5@2x.png 2x" alt="coffee-can-1.">
-                  </picture>
-                </div>
-                <h3 class="products__title">Декаф Флэт Уайт</h3>
+              <li class="products__item" tabindex="0">
+                <a class="products__link">
+                  <div class="products__img-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/catalog/coffee-can-5.webp 1x, ./img/catalog/coffee-can-5@2x.webp 2x">
+                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-5.png" srcset="./img/catalog/coffee-can-5@2x.png 2x" alt="coffee-can-1.">
+                    </picture>
+                  </div>
+                  <h3 class="products__title">Декаф Флэт Уайт</h3>
+                </a>
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
                   <p class="products__price">225₽</p>
@@ -322,15 +326,16 @@
                   </button>
                 </div>
               </li>
-              <li class="products__item">
-                <div class="products__img-wrapper">
-                  <picture>
-                    <source type="image/webp" srcset="./img/catalog/coffee-can-6.webp 1x, ./img/catalog/coffee-can-6@2x.webp 2x">
-
-                    <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-6.png" srcset="./img/catalog/coffee-can-6@2x.png 2x" alt="coffee-can-1.">
-                  </picture>
-                </div>
-                <h3 class="products__title">Декаф Флэт Уайт</h3>
+              <li class="products__item" tabindex="0">
+                <a class="products__link">
+                  <div class="products__img-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/catalog/coffee-can-6.webp 1x, ./img/catalog/coffee-can-6@2x.webp 2x">
+                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-6.png" srcset="./img/catalog/coffee-can-6@2x.png 2x" alt="coffee-can-1.">
+                    </picture>
+                  </div>
+                  <h3 class="products__title">Декаф Флэт Уайт</h3>
+                </a>
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
                   <p class="products__price">225₽</p>
@@ -375,11 +380,11 @@
         </section>
       </div>
       <!-- *Map -->
-      <section class="map">
+      <section class="map" id="map">
         <h3 class="visually-hidden">Адрес на карте.</h3>
-        <iframe  class="map__frame"
+        <!-- <iframe  class="map__frame"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822608413316!2d30.31522021609819!3d59.968265981886944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sby!4v1665562004219!5m2!1sru!2sby" width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        </iframe> -->
       </section>
     </main>
     <footer class="footer">
@@ -482,7 +487,7 @@
       </section>
       <div class="footer__developer developer">
         <p class="developer__text">Разработано в</p>
-        <a class="developer__logo" href="#">
+        <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="developer__logo-text">HTML Academy</span>
           <svg width="12" height="16">
             <use xlink:href="../img/sprite.svg#academy-logo"></use>
@@ -491,6 +496,9 @@
       </div>
     </footer>
   </div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
   <script src="/js/script.js" type="module"></script>
 </body>
 

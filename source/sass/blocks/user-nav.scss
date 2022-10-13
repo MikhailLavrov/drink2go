@@ -3,8 +3,11 @@
   align-items: center;
 }
 
-.user-nav__button,
-.user-nav__link {
+.user-nav__button svg {
+  fill: $base-black;
+}
+
+.user-nav__button {
   padding: 20px 22px;
   height: 60px;
 
@@ -21,25 +24,34 @@
     color: $base-primary;
   }
 
+  &:active {
+    background-color: $base-secondary;
+  }
+
+  &:hover svg,
+  &:focus svg,
+  &:active svg {
+    fill: $base-primary;
+  }
+
   @media (min-width: $tablet-width) {
     height: 80px;
   }
+
+  &--enter {
+    font-size: 12px;
+    line-height: 16px;
+
+    background-color: transparent;
+  }
+
+  &--basket {
+    color: $base-black;
+    text-decoration: none;
+  }
 }
 
-.user-nav__button {
-  font-size: 12px;
-  line-height: 16px;
-
-  background-color: transparent;
-}
-
-.user-nav__link {
-  text-decoration: none;
-  color: $base-black;
-}
-
-.user-nav__button span,
-.user-nav__link span {
+.user-nav__button span {
   display: none;
 
   @media (min-width: $desktop-width) {

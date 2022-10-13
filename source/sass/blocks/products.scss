@@ -75,9 +75,16 @@
 
   text-align: left;
   background-color: $base-white;
+  border-radius: 4px;
 
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
   }
 
   @media (min-width: $tablet-width) {
@@ -87,6 +94,12 @@
       margin-bottom: 0;
     }
   }
+}
+
+.products__link {
+  color: $base-black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .products__img-wrapper {
@@ -156,6 +169,7 @@
 
 .products__button svg {
   margin-right: 6px;
+  fill: $base-white;
 }
 
 .products__pagination {

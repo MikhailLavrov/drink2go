@@ -130,6 +130,15 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2%;
+
+  &:hover,
+  &:focus {
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
 }
 
 .footer__item {

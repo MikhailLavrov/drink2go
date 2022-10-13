@@ -58,6 +58,10 @@
   }
 }
 
+.advantages__item svg {
+  fill: $base-primary;
+}
+
 .advantages__item {
   &:not(:last-child) {
     margin-bottom: 32px;

@@ -18,6 +18,10 @@
   }
 }
 
+.pagination__link svg {
+  fill: $base-primary;
+}
+
 .pagination__link {
   width: 40px;
   height: 40px;
@@ -29,8 +33,10 @@
   font-size: 16px;
   line-height: 24px;
   color: $base-primary;
+
   cursor: pointer;
   background-color: $base-white;
+  border-radius: 4px;
 
   &--active {
     font-weight: 600;
@@ -47,6 +53,22 @@
     @media (min-width: $tablet-width) {
       min-width: 150px;
     }
+  }
+
+  &:hover:not(.pagination__link--active),
+  &:focus:not(.pagination__link--active) {
+    color: $base-white;
+    background-color: $primary-lighter;
+  }
+
+  &:active:not(.pagination__link--active) {
+    color: $base-white;
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    color: $base-white;
+    background-color: $light-grey;
   }
 }
 

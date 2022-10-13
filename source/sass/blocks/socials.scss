@@ -9,4 +9,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $base-secondary;
+  }
+
+  &:active {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  &:hover svg,
+  &:focus svg,
+  &:active svg {
+    fill: $base-primary;
+  }
+}
+
+.socials__link svg {
+  fill: $base-grey;
 }
