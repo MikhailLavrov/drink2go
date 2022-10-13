@@ -12,15 +12,17 @@
 }
 
 .developer__logo {
-  text-decoration: none;
   display: flex;
   align-items: center;
+
+  text-decoration: none;
   cursor: pointer;
 }
 
 .developer__text {
   margin: 0;
   margin-right: 3px;
+
   text-decoration: none;
 }
 

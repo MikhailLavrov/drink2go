@@ -1,16 +1,18 @@
 .logo {
-  text-decoration: none;
+  max-width: 170px;
+
   display: flex;
   align-items: center;
-  max-width: 170px;
+
+  text-decoration: none;
   cursor: pointer;
 }
 
 .logo__text {
-  text-transform: uppercase;
   font-size: 24px;
   line-height: 24px;
   font-weight: 800;
+  text-transform: uppercase;
   color: $base-black;
 }
 

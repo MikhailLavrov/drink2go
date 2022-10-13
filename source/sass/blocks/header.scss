@@ -1,12 +1,18 @@
 .header {
   width: 100%;
   min-height: 60px;
+
   display: flex;
   align-items: center;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
+    padding: 0 20px;
     min-height: 80px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 40px;
   }
 }
 
@@ -14,10 +20,14 @@
   margin-left: 20px;
   margin-right: auto;
 
+  @media (min-width: $tablet) {
+    margin-left: 0;
+  }
+
   @media (min-width: $desktop) {
+    max-width: 320px;
     display: flex;
     align-items: center;
-    max-width: 320px;
   }
 }
 
@@ -28,15 +38,18 @@
 
 .header__logo-text {
   display: none;
+
   @media (min-width: $tablet) {
     display: block;
   }
 }
 
 .header__text {
-  display: none;
-  max-width: 126px;
   margin-left: 20px;
+  max-width: 126px;
+
+  display: none;
+
   text-align: left;
 
   @media (min-width: $desktop) {
@@ -56,10 +69,10 @@
 
 .header__user-menu {
   display: flex;
+
   @media (min-width: $tablet) {
-    margin-right: 20px;
-    justify-content: end;
     margin-left: auto;
+    justify-content: end;
   }
 }
 
@@ -73,15 +86,15 @@
 
 //*Кнопка меню
 .header__navigation-button {
-  display: block;
   padding: 0;
   width: 60px;
   height: 60px;
+
+  display: block;
   position: relative;
 
   background-color: transparent;
   border: none;
-
   cursor: pointer;
 
   @media (min-width: $tablet) {
@@ -90,35 +103,35 @@
 }
 
 // Кнопка меню при ЗАКРЫТОМ меню (иконка бургер)
-.header__navigation-button--closed .header__navigation-button::before {
+.header__navigation--closed .header__navigation-button::before {
   position: absolute;
   content: "";
-  top: 50%;
-  left: calc(50% - 8px);
   width: 16px;
   height: 1.5px;
+  top: 50%;
+  left: calc(50% - 8px);
   background-color: $base-black;
   box-shadow: 0 -3.75px 0 0 $base-black, 0 3.75px 0 0 $base-black;
 }
 
-// // Кнопка меню при ОТКРЫТОМ меню (иконка крестик)
-// .header__navigation-button--opened .header__navigation-button {
-//   &::before,
-//   &::after {
-//     position: absolute;
-//     content: "";
-//     top: 50%;
-//     left: 0;
-//     width: 16px;
-//     height: 1.5px;
-//     background-color: $base-black;
-//   }
+// Кнопка меню при ОТКРЫТОМ меню (иконка крестик)
+.header__navigation--opened .header__navigation-button {
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 1.5px;
+    top: 50%;
+    left: 22px;
+    background-color: $base-black;
+  }
 
-//   &::before {
-//     transform: rotate(45deg);
-//   }
+  &::before {
+    transform: rotate(45deg);
+  }
 
-//   &::after {
-//     transform: rotate(-45deg);
-//   }
-// }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

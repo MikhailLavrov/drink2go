@@ -1,15 +1,15 @@
 .footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
   box-sizing: border-box;
 
   @media (min-width: $desktop) {
+    padding: 40px;
     display: grid;
     grid-template-columns: 318px auto;
     column-gap: 30px;
     row-gap: 20px;
-    padding: 40px;
   }
 }
 
@@ -23,6 +23,7 @@
 
 .footer__text {
   display: none;
+
   font-size: 14px;
   line-height: 20px;
 
@@ -33,6 +34,10 @@
 
 .footer__wrapper {
   border-bottom: 1px solid $base-secondary;
+
+  @media (min-width: $tablet) {
+    border-bottom: none;
+  }
 }
 
 .footer__navigation-wrapper {
@@ -45,8 +50,8 @@
   }
 
   @media (min-width: $desktop) {
-    flex-direction: column;
     padding: 0;
+    flex-direction: column;
     row-gap: 50px;
     align-items: flex-start;
   }
@@ -56,11 +61,12 @@
   margin: 0;
   padding: 0;
   margin-left: auto;
+  max-width: 160px;
+
   display: flex;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  max-width: 160px;
 
   @media (min-width: $desktop) {
     margin-left: 0;
@@ -72,10 +78,10 @@
   text-align: left;
 
   @media (min-width: $tablet) {
+    padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    padding: 0 20px;
   }
 
   @media (min-width: $desktop) {
@@ -85,9 +91,9 @@
 
 .footer__list {
   margin: 0;
-  padding: 0;
-  list-style: none;
   padding: 20px;
+
+  list-style: none;
 
   @media (min-width: $tablet) {
     padding: 0;
@@ -109,20 +115,20 @@
 
 .footer__title {
   margin: 0;
+  margin-bottom: 20px;
 
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
   color: $base-primary;
   letter-spacing: 2%;
-  margin-bottom: 20px;
 }
 
 .footer__link {
+  font-weight: 500;
+  color: $base-black;
   text-decoration: none;
   text-transform: uppercase;
-  color: $base-black;
-  font-weight: 500;
   letter-spacing: 2%;
 }
 

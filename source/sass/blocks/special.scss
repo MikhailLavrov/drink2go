@@ -1,9 +1,11 @@
 .special {
-  background-color: $flat-white;
   padding: 20px;
   padding-bottom: 60px;
+
   display: flex;
   flex-direction: column;
+
+  background-color: $flat-white;
 
   @media (min-width: $tablet) {
     padding: 60px 80px 0;
@@ -12,10 +14,12 @@
 
   @media (min-width: $desktop) {
     padding: 30px 80px 60px;
-    background-image: none;
+
     display: grid;
     grid-template-columns: 600px auto;
     gap: 30px;
+
+    background-image: none;
   }
 }
 
@@ -26,6 +30,7 @@
 
   @media (min-width: $desktop) {
     margin-bottom: 0;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -35,13 +40,14 @@
 
 .special__img-wrapper {
   margin-bottom: 10px;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
   @media (min-width: $tablet) {
-    order: 2;
     margin: 0;
+    order: 2;
   }
 
   @media (min-width: $desktop) {
@@ -50,6 +56,7 @@
 }
 
 .special__img {
+
   @media (min-width: $tablet) {
     width: 476px;
     height: 476px;
@@ -64,21 +71,23 @@
 .special__title {
   margin: 0;
   margin-bottom: 10px;
+
   font-size: 36px;
   line-height: 48px;
   font-weight: 700;
   letter-spacing: 2%;
 
   @media (min-width: $tablet) {
+    margin-bottom: 16px;
     font-size: 56px;
     line-height: 80px;
-    margin-bottom: 16px;
   }
 }
 
 .special__text {
   margin: 0;
   margin-bottom: 20px;
+
   font-size: 14px;
   line-height: 20px;
 
@@ -86,35 +95,38 @@
     font-size: 20px;
     line-height: 32px;
   }
-  line-height: 20px;
 
   @media (min-width: $desktop) {
-    text-align: left;
     margin-bottom: 40px;
+    text-align: left;
   }
 }
 
 .special__old-price {
-  color: $base-primary;
+  margin-right: 6px;
+
   font-size: 16px;
   line-height: 32px;
-  margin-right: 6px;
+  color: $base-primary;
 }
 
 .special__new-price {
+  margin-right: 20px;
+
   font-size: 20px;
   line-height: 32px;
   font-weight: 600;
-  margin-right: 20px;
 }
 
 .special__button {
   padding: 8px 20px;
-  background-color: $base-primary;
+
   font-size: 16px;
   line-height: 24px;
   color: $base-white;
+
   border-radius: 4px;
+  background-color: $base-primary;
 }
 
 .special__badge {

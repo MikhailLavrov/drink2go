@@ -1,93 +1,22 @@
 @import "vars.scss";
-@import './global/global.scss';
+@import './blocks/advantages.scss';
+@import './blocks/badge.scss';
 @import './blocks/body.scss';
+@import './blocks/catalog.scss';
+@import './blocks/contacts.scss';
+@import './blocks/country.scss';
+@import './blocks/developer.scss';
+@import './blocks/footer.scss';
+@import './global/global.scss';
 @import './blocks/header.scss';
 @import './blocks/logo.scss';
-@import './blocks/menu.scss';
-@import './blocks/user-nav.scss';
 @import './blocks/main.scss';
-@import './blocks/special.scss';
-@import './blocks/advantages.scss';
-@import './blocks/catalog.scss';
-@import './blocks/price.scss';
-@import './blocks/milk-type.scss';
-@import './blocks/country.scss';
-@import './blocks/products.scss';
-@import './blocks/pagination.scss';
-@import './blocks/footer.scss';
-@import './blocks/socials.scss';
-@import './blocks/contacts.scss';
-@import './blocks/developer.scss';
-@import './blocks/developer.scss';
-@import './blocks/badge.scss';
 @import './blocks/map.scss';
-
-
-
-// .img-wrapper {
-//   margin-bottom: 24px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-
-//   @media (min-width: $tablet) {
-//     order: 2;
-//     margin: 0;
-//   }
-// }
-
-// .logo
-
-// .logo__img
-
-// .menu__item
-
-// .special__img
-
-// .special__info
-
-// .special__offer
-
-
-
-// .catalog__filter
-
-// .price
-
-
-
-
-
-// .catalog__button
-
-// .catalog__products
-
-// .products
-
-// .products__img
-
-// .products__pagination
-
-// .pagination
-
-// .pagination__item
-
-// .map
-
-// .map__frame
-
-// .footer
-
-// .footer__logo
-
-// .socials__item
-
-// .socials__link
-
-// .marketplace__item
-
-// .media__item
-
-// .contacts
-
-// .developer
+@import './blocks/menu.scss';
+@import './blocks/milk-type.scss';
+@import './blocks/pagination.scss';
+@import './blocks/price.scss';
+@import './blocks/products.scss';
+@import './blocks/socials.scss';
+@import './blocks/special.scss';
+@import './blocks/user-nav.scss';

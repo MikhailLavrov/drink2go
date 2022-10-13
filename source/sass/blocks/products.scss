@@ -1,6 +1,7 @@
 .products__sort-title {
   padding: 0;
   margin: 0;
+
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
@@ -8,14 +9,14 @@
 }
 
 .products__sort {
+  margin-bottom: 20px;
+
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
   align-items: center;
 
   @media (min-width: $tablet) {
     justify-content: end;
-    padding: 0 20px;
   }
 
   @media (min-width: $desktop) {
@@ -25,14 +26,16 @@
 
 .products__sort-select {
   padding: 4px 10px;
-  border: none;
-  background-color: transparent;
+  max-width: 165px;
+
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   color: $base-primary;
+
+  border: none;
+  background-color: transparent;
   cursor: pointer;
-  max-width: 165px;
   box-sizing: border-box;
 
   &:hover,
@@ -54,27 +57,24 @@
   list-style: none;
 
   @media (min-width: $tablet) {
+    margin-bottom: 70px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     grid-auto-flow: dense;
-    margin-bottom: 70px;
-    padding: 0 20px;
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 0;
-    padding: 0;
-    padding-right: 40px;
     margin-bottom: 60px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .products__item {
   padding: 40px 20px 20px;
-  background-color: $base-white;
+
   text-align: left;
+  background-color: $base-white;
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -91,6 +91,7 @@
 
 .products__img-wrapper {
   margin-bottom: 24px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,20 +104,23 @@
 .products__title {
   margin: 0;
   margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
 
   @media (min-width: $tablet) {
+    margin-bottom: 10px;
+
     font-size: 24px;
     line-height: 36px;
-    margin-bottom: 10px;
   }
 }
 
 .products__text {
   margin: 0;
   margin-bottom: 16px;
+
   font-size: 14px;
   line-height: 20px;
 
@@ -133,20 +137,24 @@
 .products__price {
   margin: 0;
   margin-right: auto;
+
   font-size: 20px;
   line-height: 32px;
   font-weight: 600;
 }
 
 .products__button {
-  color: $base-white;
-  font-size: 14px;
-  line-height: 20px;
   padding: 8px 20px;
-  border-radius: 4px;
-  background-color: $base-primary;
+
   display: flex;
   align-items: center;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $base-white;
+
+  border-radius: 4px;
+  background-color: $base-primary;
 }
 
 .products__button svg {

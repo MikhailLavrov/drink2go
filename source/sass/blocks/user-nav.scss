@@ -5,14 +5,16 @@
 
 .user-nav__button,
 .user-nav__link {
+  padding: 20px 22px;
   height: 60px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding: 20px 22px;
   box-sizing: border-box;
+
+  font-weight: 500;
+  text-transform: uppercase;
 
   &:hover,
   &:focus {
