@@ -144,17 +144,14 @@
 }
 
 .products__button {
-  padding: 8px 20px;
+  min-width: 141px;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   font-size: 14px;
   line-height: 20px;
-  color: $base-white;
-
-  border-radius: 4px;
-  background-color: $base-primary;
 }
 
 .products__button svg {
