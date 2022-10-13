@@ -1,25 +1,15 @@
-.map__frame {
-  margin: 0 auto;
-}
+.map {
+  height: 420px;
 
-.map--mobile {
   @media (min-width: $tablet) {
-    display: none;
+    height: 480px;
   }
-}
-
-.map--tablet {
-  display: none;
-
-  @media (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
-    display: block;
-  }
-}
-
-.map--desktop {
-  display: none;
 
   @media (min-width: $desktop) {
-    display: block;
+    height: 540px;
   }
+}
+
+.map__frame {
+  height: 100%;
 }
