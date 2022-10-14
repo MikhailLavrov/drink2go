@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
   <title>Coffeeshop</title>
 </head>
@@ -60,21 +61,52 @@
       </div>
     </header>
     <main class="main">
-      <h1 class="visually-hidden">Интернет магазин кофейных напитков</h1>
+      <h1 class="visually-hidden">Интернет магазин кофейных напитков.</h1>
       <div class="main__container">
         <section class="special">
           <h2 class="visually-hidden">Новинка.</h2>
-          <div class="special__img-wrapper">
-            <picture>
-              <source media="(min-width: 1440px)" type="image/webp" srcset="./img/new/flat-white-desktop.webp 1x, ./img/new/flat-white-desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" type="image/webp" srcset="./img/new/flat-white-tablet.webp 1x, ./img/new/flat-white-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="./img/new/flat-white-img.webp 1x, ./img/new/flat-white-img@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" type="image/png" srcset="./img/new/flat-white-desktop.png 1x, ./img/new/flat-white-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" type="image/png" srcset="./img/new/flat-white-tablet.png 1x, ./img/new/flat-white-tablet@2x.png 2x">
-              <img class="special__img"  width="280" height="280" src="./img/new/flat-white-img.png" srcset="./img/new/flat-white-img@2x.png 2x" alt="flat white.">
-            </picture>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/webp" srcset="./img/new/flat-white-desktop.webp 1x, ./img/new/flat-white-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="./img/new/flat-white-tablet.webp 1x, ./img/new/flat-white-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/new/flat-white-img.webp 1x, ./img/new/flat-white-img@2x.webp 2x">
+
+                  <source media="(min-width: 1440px)" type="image/png" srcset="./img/new/flat-white-desktop.png 1x, ./img/new/flat-white-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" type="image/png" srcset="./img/new/flat-white-tablet.png 1x, ./img/new/flat-white-tablet@2x.png 2x">
+                  <img class="special__img"  width="280" height="280" src="./img/new/flat-white-img.png" srcset="./img/new/flat-white-img@2x.png 2x" alt="flat white.">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/webp" srcset="./img/new/lavender-img-desktop.webp 1x, ./img/new/lavender-img-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="./img/new/lavender-img-tablet.webp 1x, ./img/new/lavender-img-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/new/lavender-img.webp 1x, ./img/new/lavender-img@2x.webp 2x">
+
+                  <source media="(min-width: 1440px)" type="image/png" srcset="./img/new/lavender-img-desktop.png 1x, ./img/new/lavender-img-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" type="image/png" srcset="./img/new/lavender-img-tablet.png 1x, ./img/new/lavender-img-tablet@2x.png 2x">
+                  <img class="special__img"  width="280" height="280" src="./img/new/lavender-img.png" srcset="./img/new/lavender-img@2x.png 2x" alt="lavender.">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/webp" srcset="./img/new/espresso-desktop.webp 1x, ./img/new/espresso-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="./img/new/espresso-tablet.webp 1x, ./img/new/espresso-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/new/espresso.webp 1x, ./img/new/espresso@2x.webp 2x">
+
+                  <source media="(min-width: 1440px)" type="image/png" srcset="./img/new/espresso-desktop.png 1x, ./img/new/espresso-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" type="image/png" srcset="./img/new/espresso-tablet.png 1x, ./img/new/espresso-tablet@2x.png 2x">
+                  <img class="special__img"  width="280" height="280" src="./img/new/espresso.png" srcset="./img/new/espresso@2x.png 2x" alt="espresso.">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
+
           <div class="special__info">
             <h2 class="special__badge badge">Новинка!</h2>
             <p class="special__title">Декаф Флэт Уайт</p>
@@ -499,10 +531,11 @@
       </div>
     </footer>
   </div>
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
-  <script src="/js/script.js" type="module"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js" type="module"></script>
+  <script src="./js/script.js" type="module"></script>
+  <script src="./js/leaflet.js" type="module"></script>
 </body>
 
 </html>

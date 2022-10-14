@@ -38,33 +38,8 @@
   }
 }
 
-.special__img-wrapper {
-  margin-bottom: 10px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    order: 2;
-  }
-
-  @media (min-width: $desktop-width) {
-    order: 0;
-  }
-}
-
 .special__img {
-  @media (min-width: $tablet-width) {
-    width: 476px;
-    height: 476px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 600px;
-    height: 600px;
-  }
+  width: 100%;
 }
 
 .special__title {
