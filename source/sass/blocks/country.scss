@@ -97,7 +97,7 @@
     transform: translateX(18px);
   }
 
-  &:disabled + .country__input-mark{
+  &:disabled + .country__input-mark {
     outline: none;
     background-color: $light-grey;
   }

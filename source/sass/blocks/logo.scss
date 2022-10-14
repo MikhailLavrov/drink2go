@@ -9,6 +9,8 @@
 }
 
 .logo svg {
+  padding: 0 6px;
+
   fill: $base-primary;
 }
 
@@ -18,8 +20,4 @@
   font-weight: 800;
   text-transform: uppercase;
   color: $base-black;
-}
-
-.logo svg {
-  padding: 0 6px;
 }

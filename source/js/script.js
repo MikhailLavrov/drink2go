@@ -1,3 +1,4 @@
+// Mobile menu toggle
 let navMain = document.querySelector('.header__navigation');
 let navToggle = document.querySelector('.header__navigation-button');
 let mainBody = document.querySelector('.body');
@@ -14,9 +15,7 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-
-// Реализация Leaflet
-
+// Leaflet
 const map = L.map('map')
   .setView({
     lat: 59.96831,
@@ -52,6 +51,3 @@ mainPinMarker.addTo(map);
 mainPinMarker.on('moveend', (evt) => {
   console.log(evt.target.getLatLng());
 });
-
-
-

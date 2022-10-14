@@ -141,8 +141,7 @@
   }
 }
 
-// *mobile-width-only
-
+// mobile-width-only
 @media (max-width: $mobile-width-only) {
 
   // Открытое мобильное меню
@@ -205,9 +204,8 @@
     display: none;
   }
 
-  // !No JS
+  // No JS
   .body--nojs {
-
     .header {
       display: grid;
       grid-template-columns: repeat(2, auto);

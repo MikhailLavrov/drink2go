@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
   <title>Coffeeshop</title>
@@ -17,7 +17,7 @@
       <div class="header__logo-wrapper">
         <a class="header__logo logo" href="#">
           <span class="header__logo-text logo__text">d</span>
-          <svg width="32" height="36">
+          <svg width="32" height="36" role="img" aria-hidden="true" focusable="false" aria-label="Логотип.">
             <use xlink:href="../img/sprite.svg#logo"></use>
           </svg>
           <span class="header__logo-text logo__text">g</span>
@@ -26,7 +26,7 @@
         <span class="header__text">Интернет-магазин кофейных напитков</span>
       </div>
       <nav class="header__navigation header__navigation--closed">
-        <button class="header__navigation-button" type="button">
+        <button class="header__navigation-button button-element" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <ul class="header__menu menu">
@@ -45,14 +45,14 @@
         </ul>
       </nav>
       <div class="header__user-menu user-nav">
-        <button class="user-nav__button user-nav__button--enter" type="button">
-          <svg width="16" height="16">
+        <button class="user-nav__button user-nav__button--enter button-element" type="button">
+          <svg width="16" height="16" role="img" aria-hidden="true" focusable="false" aria-label="Иконка войти.">
             <use xlink:href="../img/sprite.svg#enter"></use>
           </svg>
           <span>Войти</span>
         </button>
         <a class="user-nav__button user-nav__button--basket" href="#">
-          <svg width="16" height="16">
+          <svg width="16" height="16" role="img" aria-hidden="true" focusable="false" aria-label="Иконка корзина.">
             <use xlink:href="../img/sprite.svg#basket"></use>
           </svg>
           <span>Корзина</span>
@@ -62,17 +62,17 @@
     <main class="main">
       <h1 class="visually-hidden">Интернет магазин кофейных напитков</h1>
       <div class="main__container">
-        <!-- *SpecialBlock -->
         <section class="special">
+          <h2 class="visually-hidden">Новинка.</h2>
           <div class="special__img-wrapper">
             <picture>
-              <source media="(min-width: 1440px)" type="image/webp" srcset="./img/new/flat_white_desktop.webp 1x, ./img/new/flat_white_desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" type="image/webp" srcset="./img/new/flat_white_tablet.webp 1x, ./img/new/flat_white_tablet@2x.webp 2x">
-              <source type="image/webp" srcset="./img/new/flat_white_img.webp 1x, ./img/new/flat_white_img@2x.webp 2x">
+              <source media="(min-width: 1440px)" type="image/webp" srcset="./img/new/flat-white-desktop.webp 1x, ./img/new/flat-white-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="./img/new/flat-white-tablet.webp 1x, ./img/new/flat-white-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/new/flat-white-img.webp 1x, ./img/new/flat-white-img@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" type="image/png" srcset="./img/new/flat_white_desktop.png 1x, ./img/new/flat_white_desktop@2x.png 2x">
-              <source media="(min-width: 768px)" type="image/png" srcset="./img/new/flat_white_tablet.png 1x, ./img/new/flat_white_tablet@2x.png 2x">
-              <img class="special__img"  width="280" height="280" src="./img/new/flat_white_img.png" srcset="./img/new/flat_white_img@2x.png 2x" alt="flat white.">
+              <source media="(min-width: 1440px)" type="image/png" srcset="./img/new/flat-white-desktop.png 1x, ./img/new/flat-white-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" type="image/png" srcset="./img/new/flat-white-tablet.png 1x, ./img/new/flat-white-tablet@2x.png 2x">
+              <img class="special__img"  width="280" height="280" src="./img/new/flat-white-img.png" srcset="./img/new/flat-white-img@2x.png 2x" alt="flat white.">
             </picture>
           </div>
           <div class="special__info">
@@ -83,17 +83,16 @@
             <div class="special__offer">
               <del class="special__old-price">295₽</del>
               <span class="special__new-price">225₽</span>
-              <button class="special__button button" type="button">Заказать</button>
+              <button class="special__button button button-element" type="button">Заказать</button>
             </div>
           </div>
         </section>
-        <!-- *advantages -->
         <section class="advantages">
           <h2 class="advantages__badge badge">Преимущества</h2>
           <p class="advantages__title">Главные причины выбрать Drink2Go</p>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <svg class="advantages__img" width="52" height="56">
+              <svg class="advantages__img" width="52" height="56" role="img" aria-hidden="true" focusable="false" aria-label="Иконка скорость.">
                 <use xlink:href="../img/sprite.svg#speed"></use>
               </svg>
               <div class="advantages__text-wrapper">
@@ -102,7 +101,7 @@
               </div>
             </li>
             <li class="advantages__item">
-              <svg class="advantages__img" width="52" height="56">
+              <svg class="advantages__img" width="52" height="56" role="img" aria-hidden="true" focusable="false" aria-label="Иконка комфорт.">
                 <use xlink:href="../img/sprite.svg#comfort"></use>
               </svg>
               <div class="advantages__text-wrapper">
@@ -111,7 +110,7 @@
               </div>
             </li>
             <li class="advantages__item">
-              <svg class="advantages__img" width="52" height="56">
+              <svg class="advantages__img" width="52" height="56" role="img" aria-hidden="true" focusable="false" aria-label="Иконка бодрость.">
                 <use xlink:href="../img/sprite.svg#courage"></use>
               </svg>
               <div class="advantages__text-wrapper">
@@ -120,7 +119,7 @@
               </div>
             </li>
             <li class="advantages__item">
-              <svg class="advantages__img" width="52" height="56">
+              <svg class="advantages__img" width="52" height="56" role="img" aria-hidden="true" focusable="false" aria-label="Иконка эко.">
                 <use xlink:href="../img/sprite.svg#eco"></use>
               </svg>
               <div class="advantages__text-wrapper">
@@ -137,17 +136,17 @@
             <fieldset class="price">
               <legend class="price__title">Цена</legend>
               <div class="price__slider">
-                <button class="price__slider-thumb price__slider-thumb--from" type="button">
+                <button class="price__slider-thumb price__slider-thumb--from button-element" type="button">
                   <span class="visually-hidden">Кнопка выбора цены от.</span>
                 </button>
-                <button class="price__slider-thumb price__slider-thumb--to" type="button">
+                <button class="price__slider-thumb price__slider-thumb--to button-element" type="button">
                   <span class="visually-hidden">Кнопка выбора цены до.</span>
                 </button>
                 <span class="visually-hidden">Слайдер выбора диапазона цен.</span>
               </div>
               <div class="price__input-wrapper">
                 <label class="price__input-label">
-                  <input  class="price__input" type="text" name="price" placeholder="0" max="1000">
+                  <input  class="price__input" type="text" name="price" placeholder="0">
                 </label>
                 <label class="price__input-label">
                   <input  class="price__input" type="text" name="price" placeholder="1000" value="900">
@@ -206,8 +205,8 @@
               </label>
             </fieldset>
             <fieldset class="catalog__buttons">
-              <button class="catalog__button button" type="submit">Применить фильтр</button>
-              <button class="catalog__button button button--light" type="reset">Сбросить фильтр</button>
+              <button class="catalog__button button button-element" type="submit">Применить фильтр</button>
+              <button class="catalog__button button button--light button-element" type="reset">Сбросить фильтр</button>
             </fieldset>
           </form>
           <div class="catalog__products products">
@@ -222,11 +221,11 @@
             </div>
             <ul class="products__list">
               <li class="products__item" tabindex="0">
-                <a class="products__link">
+                <a class="products__link" href="#">
                   <div class="products__img-wrapper">
                     <picture>
                       <source type="image/webp" srcset="./img/catalog/coffee-can-1.webp 1x, ./img/catalog/coffee-can-1@2x.webp 2x">
-                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-1.png" srcset="./img/catalog/coffee-can-1@2x.png 2x" alt="coffee-can-1.">
+                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-1.png" srcset="./img/catalog/coffee-can-1@2x.png 2x" alt="coffee-can.">
                     </picture>
                   </div>
                   <h3 class="products__title">Декаф Флэт Уайт</h3>
@@ -234,8 +233,8 @@
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
                   <p class="products__price">225₽</p>
-                  <button class="products__button button" type="button">
-                    <svg width="20" height="16">
+                  <button class="products__button button button-element" type="button">
+                    <svg width="20" height="16" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в корзину.">
                       <use xlink:href="../img/sprite.svg#basket-button"></use>
                     </svg>
                     <span>В корзину</span>
@@ -243,11 +242,11 @@
                 </div>
               </li>
               <li class="products__item" tabindex="0">
-                <a class="products__link">
+                <a class="products__link" href="#">
                   <div class="products__img-wrapper">
                     <picture>
                       <source type="image/webp" srcset="./img/catalog/coffee-can-2.webp 1x, ./img/catalog/coffee-can-2@2x.webp 2x">
-                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-2.png" srcset="./img/catalog/coffee-can-2@2x.png 2x" alt="coffee-can-1.">
+                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-2.png" srcset="./img/catalog/coffee-can-2@2x.png 2x" alt="coffee-can.">
                     </picture>
                   </div>
                   <h3 class="products__title">Декаф Флэт Уайт</h3>
@@ -255,8 +254,8 @@
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
                   <p class="products__price">225₽</p>
-                  <button class="products__button button" type="button">
-                    <svg width="20" height="16">
+                  <button class="products__button button button-element" type="button">
+                    <svg width="20" height="16" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в корзину.">
                       <use xlink:href="../img/sprite.svg#basket-button"></use>
                     </svg>
                     <span>В корзину</span>
@@ -264,11 +263,11 @@
                 </div>
               </li>
               <li class="products__item" tabindex="0">
-                <a class="products__link">
+                <a class="products__link" href="#">
                   <div class="products__img-wrapper">
                     <picture>
                       <source type="image/webp" srcset="./img/catalog/coffee-can-3.webp 1x, ./img/catalog/coffee-can-3@2x.webp 2x">
-                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-3.png" srcset="./img/catalog/coffee-can-3@2x.png 2x" alt="coffee-can-1.">
+                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-3.png" srcset="./img/catalog/coffee-can-3@2x.png 2x" alt="coffee-can.">
                     </picture>
                   </div>
                   <h3 class="products__title">Декаф Флэт Уайт</h3>
@@ -276,8 +275,8 @@
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
                   <p class="products__price">225₽</p>
-                  <button class="products__button button" type="button">
-                    <svg width="20" height="16">
+                  <button class="products__button button button-element" type="button">
+                    <svg width="20" height="16" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в корзину.">
                       <use xlink:href="../img/sprite.svg#basket-button"></use>
                     </svg>
                     <span>В корзину</span>
@@ -285,11 +284,11 @@
                 </div>
               </li>
               <li class="products__item" tabindex="0">
-                <a class="products__link">
+                <a class="products__link" href="#">
                   <div class="products__img-wrapper">
                     <picture>
                       <source type="image/webp" srcset="./img/catalog/coffee-can-4.webp 1x, ./img/catalog/coffee-can-4@2x.webp 2x">
-                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-4.png" srcset="./img/catalog/coffee-can-4@2x.png 2x" alt="coffee-can-1.">
+                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-4.png" srcset="./img/catalog/coffee-can-4@2x.png 2x" alt="coffee-can.">
                     </picture>
                   </div>
                   <h3 class="products__title">Декаф Флэт Уайт</h3>
@@ -297,8 +296,8 @@
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
                   <p class="products__price">225₽</p>
-                  <button class="products__button button" type="button">
-                    <svg width="20" height="16">
+                  <button class="products__button button button-element" type="button">
+                    <svg width="20" height="16" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в корзину.">
                       <use xlink:href="../img/sprite.svg#basket-button"></use>
                     </svg>
                     <span>В корзину</span>
@@ -306,11 +305,11 @@
                 </div>
               </li>
               <li class="products__item" tabindex="0">
-                <a class="products__link">
+                <a class="products__link" href="#">
                   <div class="products__img-wrapper">
                     <picture>
                       <source type="image/webp" srcset="./img/catalog/coffee-can-5.webp 1x, ./img/catalog/coffee-can-5@2x.webp 2x">
-                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-5.png" srcset="./img/catalog/coffee-can-5@2x.png 2x" alt="coffee-can-1.">
+                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-5.png" srcset="./img/catalog/coffee-can-5@2x.png 2x" alt="coffee-can.">
                     </picture>
                   </div>
                   <h3 class="products__title">Декаф Флэт Уайт</h3>
@@ -318,8 +317,8 @@
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
                   <p class="products__price">225₽</p>
-                  <button class="products__button button" type="button">
-                    <svg width="20" height="16">
+                  <button class="products__button button button-element" type="button">
+                    <svg width="20" height="16" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в корзину.">
                       <use xlink:href="../img/sprite.svg#basket-button"></use>
                     </svg>
                     <span>В корзину</span>
@@ -327,11 +326,11 @@
                 </div>
               </li>
               <li class="products__item" tabindex="0">
-                <a class="products__link">
+                <a class="products__link" href="#">
                   <div class="products__img-wrapper">
                     <picture>
                       <source type="image/webp" srcset="./img/catalog/coffee-can-6.webp 1x, ./img/catalog/coffee-can-6@2x.webp 2x">
-                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-6.png" srcset="./img/catalog/coffee-can-6@2x.png 2x" alt="coffee-can-1.">
+                      <img class="products__img"  width="130" height="188" src="./img/catalog/coffee-can-6.png" srcset="./img/catalog/coffee-can-6@2x.png 2x" alt="coffee-can.">
                     </picture>
                   </div>
                   <h3 class="products__title">Декаф Флэт Уайт</h3>
@@ -339,8 +338,8 @@
                 <p class="products__text">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="products__offer">
                   <p class="products__price">225₽</p>
-                  <button class="products__button button" type="button">
-                    <svg width="20" height="16">
+                  <button class="products__button button button-element" type="button">
+                    <svg width="20" height="16" role="img" aria-hidden="true" focusable="false" aria-label="Иконка добавить в корзину.">
                       <use xlink:href="../img/sprite.svg#basket-button"></use>
                     </svg>
                     <span>В корзину</span>
@@ -352,39 +351,36 @@
           <div class="products__pagination pagination">
             <ul class="pagination__list">
               <li class="pagination__item">
-                <a class="pagination__link pagination__link--utter">
-                  <svg width="6" height="10">
+                <a class="pagination__link pagination__link--utter" href="#">
+                  <svg width="6" height="10" role="img" aria-hidden="true" focusable="false" aria-label="Иконка назад.">
                     <use xlink:href="../img/sprite.svg#previous"></use>
                   </svg>
                   <span class="pagination__link-name">Назад</span>
                 </a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link">1</a>
+                <a class="pagination__link" href="#">1</a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link pagination__link--active">2</a>
+                <a class="pagination__link pagination__link--active" href="#">2</a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link">3</a>
+                <a class="pagination__link" href="#">3</a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link pagination__link--utter">
-                  <svg width="6" height="10">
+                <a class="pagination__link pagination__link--utter" href="#">
+                  <svg width="6" height="10" role="img" aria-hidden="true" focusable="false" aria-label="Иконка вперед.">
                     <use xlink:href="../img/sprite.svg#next"></use>
                   </svg>
                   <span class="pagination__link-name">Вперёд</span>
                 </a>
               </li>
+            </ul>
           </div>
         </section>
       </div>
-      <!-- *Map -->
       <section class="map" id="map">
         <h3 class="visually-hidden">Адрес на карте.</h3>
-        <!-- <iframe  class="map__frame"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822608413316!2d30.31522021609819!3d59.968265981886944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sby!4v1665562004219!5m2!1sru!2sby" width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe> -->
       </section>
     </main>
     <footer class="footer">
@@ -394,7 +390,7 @@
             <a class="footer__logo logo" href="#">
               <span class="footer__logo-text--short logo__text">d</span>
               <span class="footer__logo-text--full logo__text">drink</span>
-              <svg width="32" height="36">
+              <svg width="32" height="36" role="img" aria-hidden="true" focusable="false" aria-label="Логотип.">
                 <use xlink:href="../img/sprite.svg#logo"></use>
               </svg>
               <span class="footer__logo-text--short logo__text">g</span>
@@ -405,24 +401,24 @@
           </div>
           <ul class="footer__socials socials">
             <li class="socials__item">
-              <a class="socials__link">
-                <svg width="20" height="20">
+              <a class="socials__link" href="#">
+                <svg width="20" height="20" role="img" aria-hidden="true" focusable="false" aria-label="Иконка вк.">
                   <use xlink:href="../img/sprite.svg#vk"></use>
                 </svg>
                 <span class="visually-hidden">VK.</span>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link">
-                <svg width="22" height="22">
+              <a class="socials__link" href="#">
+                <svg width="22" height="22" role="img" aria-hidden="true" focusable="false" aria-label="Иконка пинтерест.">
                   <use xlink:href="../img/sprite.svg#pinterest"></use>
                 </svg>
                 <span class="visually-hidden">Pinterest.</span>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link">
-                <svg width="20" height="20">
+              <a class="socials__link" href="#">
+                <svg width="20" height="20" role="img" aria-hidden="true" focusable="false" aria-label="Иконка одноклассники.">
                   <use xlink:href="../img/sprite.svg#odnoklassniki"></use>
                 </svg>
                 <span class="visually-hidden">Одноклассники.</span>
@@ -432,9 +428,12 @@
         </div>
       </div>
       <section class="footer__info">
+        <h2 class="visually-hidden">Навигация по сайту.</h2>
         <div class="footer__wrapper">
           <ul class="footer__list">
-            <h4 class="footer__title">Интернет-магазин</h4>
+            <li class="footer__item">
+              <h3 class="footer__title">Интернет-магазин</h3>
+            </li>
             <li class="footer__item">
               <a class="footer__link" href="#">Каталог</a>
             </li>
@@ -451,7 +450,9 @@
         </div>
         <div class="footer__wrapper">
           <ul class="footer__list">
-            <h4 class="footer__title">Медиа</h4>
+            <li class="footer__item">
+              <h3 class="footer__title">Медиа</h3>
+            </li>
             <li class="footer__item">
               <a class="footer__link" href="#">Блог</a>
             </li>
@@ -465,10 +466,12 @@
         </div>
         <div class="footer__wrapper">
           <ul class="footer__list contacts">
-            <h4 class="footer__title contacts__title">Контакты</h4>
+            <li class="footer__item">
+              <h3 class="footer__title contacts__title">Контакты</h3>
+            </li>
             <li class="contacts__item">
               <div class="contacts__wrapper">
-                <svg class="contacts__img" width="13" height="16">
+                <svg class="contacts__img" width="13" height="16" role="img" aria-hidden="true" focusable="false" aria-label="Иконка адрес.">
                   <use xlink:href="../img/sprite.svg#contacts"></use>
                 </svg>
                 <span class="contacts__address">Санкт-Петербург, набережная реки Карповки, дом 5</span>
@@ -476,7 +479,7 @@
             </li>
             <li class="contacts__item">
               <a class="contacts__wrapper contacts__link" href="tel:+79999999999">
-                <svg class="contacts__img" width="13" height="16">
+                <svg class="contacts__img" width="13" height="16" role="img" aria-hidden="true" focusable="false" aria-label="Иконка телефон.">
                   <use xlink:href="../img/sprite.svg#phone"></use>
                 </svg>
                 <span class="contacts__phone">+7 (999) 999-99-99</span>
@@ -489,7 +492,7 @@
         <p class="developer__text">Разработано в</p>
         <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="developer__logo-text">HTML Academy</span>
-          <svg width="12" height="16">
+          <svg width="12" height="16" role="img" aria-hidden="true" focusable="false" aria-label="Логотип разработчика.">
             <use xlink:href="../img/sprite.svg#academy-logo"></use>
           </svg>
         </a>
