@@ -42,7 +42,7 @@
     margin-bottom: 22px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
