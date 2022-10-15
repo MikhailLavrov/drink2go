@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 40px 120px;
+    padding: 105px 40px 120px;
   }
 }
 
@@ -22,7 +22,7 @@
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 31px;
 
   font-size: 24px;
   line-height: 36px;
@@ -64,7 +64,7 @@
 
 .advantages__item {
   &:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: $tablet-width) {

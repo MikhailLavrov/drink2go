@@ -1,5 +1,5 @@
 .catalog {
-  padding: 50px 20px 44px;
+  padding: 52px 20px 44px;
 
   @media (min-width: $tablet-width) {
     padding: 80px 20px 90px;
@@ -15,7 +15,7 @@
 
 .catalog__title {
   margin: 0;
-  margin-bottom: 20.65px;
+  margin-bottom: 21px;
 
   font-size: 24px;
   line-height: 36px;
@@ -37,8 +37,8 @@
     margin-bottom: 44px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 22px;
-    row-gap: 40px;
+    column-gap: 14px;
+    row-gap: 39px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,7 +59,7 @@
 
 .catalog__buttons {
   margin: 0;
-  margin-bottom: 40.45px;
+  margin-bottom: 40px;
   padding: 0;
 
   display: flex;
@@ -70,20 +70,34 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 auto;
+
     grid-column: 1/-1;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 29.6px;
+    transform: translateX(-30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    justify-content: flex-start;
+    gap: 25px;
+    transform: none;
   }
 }
 
 .catalog__button {
+  padding: 10.6px;
   min-width: 160px;
 
   font-size: 13px;
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
+    padding: 8px 4px;
+    min-width: auto;
+
     font-size: 14px;
   }
 

@@ -10,7 +10,7 @@
 }
 
 .menu__link {
-  padding: 32px 20px;
+  padding: 32px 21px;
 
   position: relative;
   box-sizing: border-box;
@@ -19,6 +19,10 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $base-black;
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 25px;
+  }
 
   &:hover,
   &:focus {

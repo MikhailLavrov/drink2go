@@ -1,6 +1,6 @@
 .milk-type {
   margin: 0;
-  margin-bottom: 22.07px;
+  margin-bottom: 20px;
   padding: 0;
 
   display: flex;
@@ -14,13 +14,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
   }
 }
 
 .milk-type__title {
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   font-size: 16px;
   line-height: 24px;
@@ -39,7 +39,13 @@
   cursor: pointer;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 }
 

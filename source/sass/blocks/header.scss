@@ -37,11 +37,24 @@
   align-items: center;
 }
 
-.header__logo-text {
+.header__logo-short-text {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__logo-full-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    letter-spacing: 1px;
   }
 }
 
@@ -65,6 +78,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
   }
 }
 

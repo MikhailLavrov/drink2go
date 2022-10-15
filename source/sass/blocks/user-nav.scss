@@ -19,6 +19,10 @@
   font-weight: 500;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    height: 80px;
+  }
+
   &:hover,
   &:focus {
     color: $base-primary;
@@ -34,15 +38,15 @@
     fill: $base-primary;
   }
 
-  @media (min-width: $tablet-width) {
-    height: 80px;
-  }
-
   &--enter {
     font-size: 12px;
     line-height: 16px;
 
     background-color: transparent;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 20px;
+    }
   }
 
   &--basket {

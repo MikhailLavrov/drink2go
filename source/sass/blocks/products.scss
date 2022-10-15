@@ -1,3 +1,21 @@
+.products__sort {
+  margin-bottom: 17px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+    justify-content: end;
+    gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
+  }
+}
+
 .products__sort-title {
   padding: 0;
   margin: 0;
@@ -6,22 +24,6 @@
   line-height: 24px;
   font-weight: 600;
   text-align: left;
-}
-
-.products__sort {
-  margin-bottom: 20px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    justify-content: end;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
-  }
 }
 
 .products__sort-select {
@@ -157,6 +159,7 @@
 }
 
 .products__button {
+  padding: 8px;
   min-width: 141px;
 
   display: flex;
