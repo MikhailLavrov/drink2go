@@ -2,11 +2,18 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
 
 const swiper = new Swiper('.swiper', {
   loop: true,
+  autoHeight: true,
+  touchRatio: 1,
+  speed: 2000,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
+
   autoplay: {
     delay: 5500,
+    disableOnInteraction: false,
   },
-  speed: 2500,
-  autoHeight: true,
 
   keyboard: {
     enabled: true
