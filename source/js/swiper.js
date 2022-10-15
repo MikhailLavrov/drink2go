@@ -10,10 +10,10 @@ const swiper = new Swiper('.swiper', {
     crossFade: true,
   },
 
-  // autoplay: {
-  //   delay: 5500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 5500,
+    disableOnInteraction: false,
+  },
 
   keyboard: {
     enabled: true
