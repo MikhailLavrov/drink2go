@@ -1,4 +1,6 @@
-.catalog {
+.catalog__wrapper {
+  max-width: $desktop-width;
+  margin: 0 auto;
   padding: 52px 20px 44px;
 
   @media (min-width: $tablet-width) {

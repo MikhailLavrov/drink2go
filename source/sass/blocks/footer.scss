@@ -1,9 +1,14 @@
 .footer {
-  width: 100%;
+  background-color: $base-white;
+  min-width: 100%;
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+  max-width: $desktop-width;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  background-color: $base-white;
 
   @media (min-width: $desktop-width) {
     padding: 40px;
@@ -33,7 +38,7 @@
   }
 }
 
-.footer__wrapper {
+.footer__navigation-wrapper {
   border-bottom: 1px solid $base-secondary;
 
   @media (min-width: $tablet-width) {
@@ -41,7 +46,7 @@
   }
 }
 
-.footer__navigation-wrapper {
+.footer__navigation {
   padding: 20px;
   display: flex;
   align-items: center;
@@ -77,6 +82,7 @@
 
 .footer__info {
   text-align: left;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding: 0 20px;
