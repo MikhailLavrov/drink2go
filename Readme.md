@@ -12,4 +12,4 @@
 #
 > На разработку затрачено около 45 часов.
 #
-![Иллюстрация к проекту](https://github.com/MikhailLavrov/coffeshop/raw/master/thumbnail.webp)
+![Иллюстрация к проекту](https://github.com/MikhailLavrov/coffeshop/raw/master/source/img/thumbnail.webp)
