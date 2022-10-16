@@ -6,6 +6,7 @@
 - Mobile first
 - Loading otimization
 - Retina adaptive
+- Crossbrowser
 - Semantic & responsive layout
 - Leaflet.js
 - Swiper.js
