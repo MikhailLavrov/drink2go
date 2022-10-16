@@ -1,6 +1,6 @@
 .milk-type {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: $base-indent;
   padding: 0;
 
   display: flex;
@@ -44,7 +44,7 @@
 
   @media (min-width: $tablet-width) {
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: $base-indent;
     }
   }
 }

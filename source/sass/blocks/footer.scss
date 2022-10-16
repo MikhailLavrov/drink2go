@@ -11,11 +11,11 @@
   box-sizing: border-box;
 
   @media (min-width: $desktop-width) {
-    padding: 40px;
+    padding: $alt-indent;
     display: grid;
     grid-template-columns: 318px auto;
     column-gap: 30px;
-    row-gap: 20px;
+    row-gap: $base-indent;
   }
 }
 
@@ -47,12 +47,12 @@
 }
 
 .footer__navigation {
-  padding: 20px;
+  padding: $base-indent;
   display: flex;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 20px 30px;
+    padding: 40px $base-indent 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,7 +71,7 @@
 
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: $base-indent;
   flex-wrap: wrap;
 
   @media (min-width: $desktop-width) {
@@ -85,7 +85,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding: 0 20px;
+    padding: 0 $base-indent;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -100,7 +100,7 @@
 
 .footer__list {
   margin: 0;
-  padding: 22px 20px 24px;
+  padding: 22px $base-indent 24px;
 
   list-style: none;
 
@@ -110,10 +110,10 @@
 }
 
 .footer__developer {
-  padding: 20px 20px 30px;
+  padding: 20px $base-indent 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 20px 40px;
+    padding: 30px $base-indent 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -124,7 +124,7 @@
 
 .footer__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: $base-indent;
 
   font-size: 14px;
   font-weight: 700;
@@ -152,7 +152,7 @@
 
 .footer__item {
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: $base-indent;
   }
 }
 

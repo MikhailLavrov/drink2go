@@ -4,7 +4,7 @@
 
 .advantages__wrapper {
   max-width: $desktop-width;
-  padding: 50px 20px 60px;
+  padding: 50px $base-indent 60px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 105px 40px 120px;
+    padding: 105px $alt-indent 120px;
   }
 }
 
@@ -74,7 +74,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 50px auto;
-    gap: 20px;
+    gap: $base-indent;
 
     &:not(:last-child) {
       margin-bottom: 0;

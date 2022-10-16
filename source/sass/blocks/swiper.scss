@@ -6,7 +6,7 @@
 }
 
 .swiper-slide {
-  padding: 20px 20px 60px;
+  padding: 20px $base-indent 60px;
 
   display: flex;
   flex-direction: column;
@@ -71,7 +71,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column-reverse;
-    gap: 20px;
+    gap: $base-indent;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,7 +125,7 @@
 
 .swiper__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: $base-indent;
 
   font-size: 14px;
   line-height: 20px;
@@ -136,7 +136,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 40px;
+    margin-bottom: $alt-indent;
 
     text-align: left;
   }
@@ -159,7 +159,7 @@
 }
 
 .swiper__new-price {
-  margin-right: 20px;
+  margin-right: $base-indent;
 
   font-size: 20px;
   line-height: 32px;

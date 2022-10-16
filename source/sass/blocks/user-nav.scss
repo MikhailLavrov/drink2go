@@ -45,7 +45,7 @@
     background-color: transparent;
 
     @media (min-width: $desktop-width) {
-      margin-right: 20px;
+      margin-right: $base-indent;
     }
   }
 

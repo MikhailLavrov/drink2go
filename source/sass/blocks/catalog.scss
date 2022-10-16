@@ -1,14 +1,14 @@
 .catalog__wrapper {
   max-width: $desktop-width;
   margin: 0 auto;
-  padding: 52px 20px 44px;
+  padding: 52px $base-indent 44px;
 
   @media (min-width: $tablet-width) {
-    padding: 80px 20px 90px;
+    padding: 80px $base-indent 90px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 40px 120px;
+    padding: 100px $alt-indent 120px;
     display: grid;
     grid-template-columns: 318px auto;
     column-gap: 30px;
@@ -29,7 +29,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 40px;
+    margin-bottom: $alt-indent;
     grid-column: 1/-1;
   }
 }
@@ -61,7 +61,7 @@
 
 .catalog__buttons {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: $alt-indent;
   padding: 0;
 
   display: flex;

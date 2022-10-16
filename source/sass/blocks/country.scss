@@ -14,13 +14,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 40px;
+    margin-bottom: $alt-indent;
   }
 }
 
 .country__title {
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: $base-indent;
 
   font-size: 16px;
   line-height: 24px;
@@ -39,7 +39,7 @@
   cursor: pointer;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: $base-indent;
   }
 }
 
