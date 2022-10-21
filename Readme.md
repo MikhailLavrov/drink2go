@@ -1,26 +1,25 @@
 # Drink 2 Go
 #### _online store of coffee drinks_
 #
-- HTML / SCSS / JS / Gulp
-- BEM methodology
-- Mobile first
-- Loading otimization
-- Retina adaptive
-- Crossbrowser
-- Semantic & responsive layout
-- Leaflet.js
-- Swiper.js
+- [x] HTML / SCSS / JS / Gulp
+- [x] BEM methodology
+- [x] Mobile first
+- [x] Loading otimization
+- [x] Retina adaptive
+- [x] Crossbrowser
+- [x] Semantic & responsive layout
+- [x] Leaflet.js
+- [x] Swiper.js
 
-## Installation & start
+---
+Getting Started with:
 
 ```sh
-cd drink2go
-npm i
 npm start
 ```
+---
+![Иллюстрация к проекту](https://github.com/MikhailLavrov/coffeshop/raw/master/source/img/thumbnail.webp)
 
 #
 > The development took about 45 hours
 #
-
-![Иллюстрация к проекту](https://github.com/MikhailLavrov/coffeshop/raw/master/source/img/thumbnail.webp)
