@@ -1,5 +1,5 @@
-# Проект Drink 2 Go
-### _Интернет магазин кофейных напитков_
+# Drink 2 Go
+#### _online store of coffee drinks_
 #
 - HTML / SCSS / JS / Gulp
 - BEM methodology
@@ -10,7 +10,17 @@
 - Semantic & responsive layout
 - Leaflet.js
 - Swiper.js
+
+## Installation & start
+
+```sh
+cd drink2go
+npm i
+npm start
+```
+
 #
-> На разработку затрачено около 45 часов.
+> The development took about 45 hours
 #
+
 ![Иллюстрация к проекту](https://github.com/MikhailLavrov/coffeshop/raw/master/source/img/thumbnail.webp)
