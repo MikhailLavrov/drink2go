@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   autoHeight: true,
   touchRatio: 2,
-  speed: 2000,
+  speed: 1000,
 
   effect: 'fade',
   fadeEffect: {

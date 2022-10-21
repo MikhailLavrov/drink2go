@@ -20,3 +20,19 @@
   text-transform: uppercase;
   color: $base-black;
 }
+
+.logo__text--short {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo__text--full {
+  display: none;
+  letter-spacing: 1px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+

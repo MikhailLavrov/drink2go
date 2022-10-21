@@ -28,7 +28,7 @@
 
 .products__sort-select {
   padding: 4px 10px;
-  max-width: 165px;
+  max-width: 167px;
 
   font-size: 16px;
   line-height: 24px;
@@ -141,7 +141,7 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom:$base-indent;
+    margin-bottom: $base-indent;
   }
 }
 
@@ -176,7 +176,7 @@
   fill: $base-white;
 }
 
-.products__pagination {
+.catalog__pagination {
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
   }

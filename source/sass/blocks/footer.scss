@@ -50,9 +50,11 @@
   padding: $base-indent;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid $base-secondary;
 
   @media (min-width: $tablet-width) {
     padding: 40px $base-indent 30px;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,9 +105,11 @@
   padding: 22px $base-indent 24px;
 
   list-style: none;
+  border-bottom: 1px solid $base-secondary;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    border-bottom: none;
   }
 }
 
@@ -153,20 +157,5 @@
 .footer__item {
   &:not(:last-child) {
     margin-bottom: $base-indent;
-  }
-}
-
-.footer__logo-text--short {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.footer__logo-text--full {
-  display: none;
-  letter-spacing: 1px;
-
-  @media (min-width: $tablet-width) {
-    display: block;
   }
 }
